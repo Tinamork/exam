@@ -1,0 +1,191 @@
+.navbar {
+    overflow: hidden;
+    background-color: rgb(227, 185, 135);
+    padding: 20px 10px;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+  }
+  
+  
+  .navbar a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 40px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(103, 64, 18);
+    font-family: fantasy;
+  }
+  
+  
+  .navbar .logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(103, 64, 18);
+    font-family: fantasy;
+    font-size: 40px; 
+  }
+  
+
+  .navbar a:hover {
+    background-color: rgb(145,112,55);
+    color: black;
+  }
+  
+  
+  * {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+  }
+
+
+/*NAVIGATION BAR^^ */
+
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(227, 185, 135);
+}
+ 
+a {
+    color: rgb(103, 64, 18);
+    font-family: fantasy;
+    font-size: 150%;
+}
+ 
+
+.bilde-utseende{
+    display: block;
+  margin-right: auto;
+  object-fit: cover;
+
+
+}
+
+ 
+.restaurantnavn {
+    text-align: center;
+    font-size: 200%;
+    background: url("italiensk restaurant.webp");
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 83%;
+}
+ 
+.restaurantnavn h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 300%;
+    background-color: transparent;
+}
+ 
+.restaurantnavn h2 {
+    font-size: 150%;
+    margin-top: 50%;
+    background-color: transparent;
+    color: black;
+    
+}
+ 
+.menyen {
+    margin-left: 25%;
+    margin-top: 10%;
+}
+ 
+.menyen ul li {
+    list-style: georgian;
+}
+ 
+.menyen h3 {
+    font-size: 200%;
+}
+ 
+.menyen h4 {
+    display:block;
+    font-size: 150%;
+    margin: 30px;
+    font-weight: bold;
+}
+
+
+.allergener{
+    display: block;
+    color: rgb(94, 57, 12);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.forrett {
+    margin-bottom: 100px;
+}
+ 
+.hovedretter {
+    margin-bottom: 100px;
+}
+ 
+.desserter {
+    margin-top: 0px;
+    margin-bottom: 110px;
+}
+
+
+.footer {
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+.footer ul li {
+    list-style: none;
+    margin-top: 0%;
+    font-size: 105%;
+}
+
+.footer h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 200%;
+    margin-left: 15%;
+    margin-top: 150px;
+    margin-bottom: 0px;
+}
+
+.footer h5 {
+    font-size: 150%;
+}
+
+.footer.åpningstider {
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+    margin-left: 4%;
+    margin-top: 0px;
+}
+
+
+.footer.omoss{
+  background-color: rgb(185, 184, 150);
+  text-align: left;
+  width: 400px;
+  height: 100px;
+  margin-top: 5%;
+  margin-bottom: 1%;
+  
+}
+
+
+.footer.omoss {
+    border-style: solid;
+    padding-right: 30px;
+    background-color: antiquewhite;
+    width: 400px;
+    
+}
