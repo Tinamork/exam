@@ -2,7 +2,7 @@
 Header {
     overflow: hidden;
     background-color: hvite;
-    padding: 20px 10px;
+    
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -14,28 +14,28 @@ Header {
 .Header a {
     float: right;
     color: blue;
-    text-align: center;
     padding: 12px;
     text-decoration: none;
     font-size: 20px;
     line-height: 25px;
-    border-radius: 4px;
     font-weight: bold;
-    font-family: fantasy;
+    font-family: Jost;
 }
 
 .Header .logo {
     float: left;
-    font-size: 25px;
-    font-weight: bold;
     color: blue;
-    font-family: fantasy;
-    font-size: 40px; 
+    padding: 12px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: bold;
+    font-family: Jost;
+    
   }
   
 
   .Header a:hover {
-    background-color: rgb(145,112,55);
+    background-color: hvite;
     color: black;
   }
   
