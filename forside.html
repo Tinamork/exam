@@ -1,95 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>forside</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-body {font-family: "Times New Roman", Georgia, Serif;}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display";
-  letter-spacing: 5px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="side2.css">
+
+    <!--link til fonter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+    </style>
+        
+
+
 </head>
 <body>
 
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-    <div class="w3-bar w3-dark-grey w3-padding w3-card" style="letter-spacing:4px;">
-      <a href="#logo" class="w3-bar-item w3-button">Italiano</a>
-      <!-- Right-sided navbar links. Hide them on small screens -->
-      <div class="w3-right w3-hide-small">
-        <a href="forside.html" class="w3-bar-item w3-button">Forside</a>
-        <a href="side2.html" class="w3-bar-item w3-button">Booking og kontakt</a>
-        <a href="side3.html" class="w3-bar-item w3-button">Meny</a>
-        <a href="side4.html" class="w3-bar-item w3-button">Accessibility</a>
-        <a href="side5.html" class="w3-bar-item w3-button">Topical</a>
-      </div>
-    </div>
-  </div>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:1100px">
-
-  <!-- About Section -->
-  <div class="w3-row w3-padding-64" >
-    <div class="w3-col m6 w3-padding-large w3-hide-small">
-     <img src="https://selskaper.no/wp-content/uploads/2020/11/oms.jpg" class="w3-round w3-image " alt="lokalebilde" width="600" height="750">
+    <div class="navbar">
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="#">
+                        <img src="barn.png" alt="pexels.com, fotograf: DinosoftLabs" class="barnbilde">
+                        Nedre Foss Gård</a>
+                </div>
+                
+                <nav>
+                    <a href="forside.html">Forside</a>
+                    <a href="#">Booking</a>
+                    <a href="side3.html">Restaurant</a>
+                    <a href="side4.html">Brukervennlighet</a>
+                    <a href="side5.html">Topical</a>
+                </nav>
+            </div>
+        </header>
     </div>
 
-    <div class="w3-col m6 w3-padding-large">
-      <h1 class="w3-center">Velkommen til Italiano</h1><br>
-      <h5 class="w3-center">helt siden 1965</h5>
-      <p class="w3-large">Våre ærverdige selskapslokaler er åpne for alle og passer perfekt til de fleste festlige aktiviteter og selskaper.
-    Vi har lang erfaring med å arrangere bryllup, konfirmasjoner, mottakelser, konferanser, brunsjer, vinsmakinger og alle andre jubileer </p>
-    <h4 class="w3-center">Kontakt oss i dag og vi skreddesyr deres neste selskap.</h4>
-    </div>
-  </div>
-  
-  <hr>
-  
-  <!-- blabla -->
-  <div class="w3-row w3-padding-64" >
-    <div class="w3-col l6 w3-padding-large">
-      <h1 class="w3-center">Selskapslokaler Italiano</h1><br>
-      <p>Selskapslokaler Italiano byr på herskapelige selskapslokaler, passende for enhver anledning.
-      Gjør sammenkomsten til en minneverdig opplevelse. Du finner oss sentralt i Oslo.
-      Lokalet tilpasses ditt arrangement. Dette vil si at du kan booke alt fra ett rom til hele lokalet. 
-      Totalt har vi kapasitet til å huse selskap på opptil 200 personer.
-       Vi byr på førsteklasses menyer, men legger også til rette for ønsket mat og drikke på forespørsel.
-    </p>
-    </div>
+   
+    <div class="intro">
+
+        <h1>Velkommen til Nedre foss Gård eventbooking</h1>
+
+        <p><i>Estd. 1974</i></p>
+
+        <p>Nedre foss Gård tilbyr store og små rom og lokaler som kan bookes til din spesielle dag.</p>
+
+        <p>Dette er noen av arrangementpakkene vi tilbyr denne sesongen</p>
     
-  </div>
+    </div>
 
-  <hr>
 
-  <!-- Contact Section -->
-  <div class="w3-container w3-padding-64">
-    <h1>Kontakt oss</h1>
-    <p>Vi tilbyr både store og små catering for alle annledning. Send oss en forespørsel etter hva dere ønsker,og vi leverer.</p>
-    <p class="w3-text-blue-grey w3-large"><b>Italiano, Pilesteredet 35, 0179 Oslo</b></p>
-    <p>Dere kan også kontakte oss med tlf +47 22 44 55 66 eller på epost Italiano@catering.no, ellers kan dere sende oss melding her:</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Navn" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="number" placeholder="Hvor mange personer" required name="People"></p>
-      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Dato og tid" required name="date" value="2022-12-16T20:00"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Melding / noe annet" required name="Message"></p>
-      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MELDING</button></p>
-    </form>
-  </div>
-  
-</div>
+   
+    <div class="container">
 
-<!-- Footer -->
-<footer class="w3-center w3-dark-grey w3-padding-32">
-  <p>Italiano</p>
-  <h2>Google Map Example</h2>  
-  
-</footer>
+        <div class="eventtype">
 
+            <img src="bryllup.jpg" alt="Pexels.com, fotograf: Emma Bauso" class="bryllupbilde">
+        
+            <div class="bryllupinnhold">
+                <h2>Bryllup</h2>
+                <p>Book den spesielle dagen her!</p>
+                <p>Gift deg i våre mest dekadente lokaler</p>
+                <br>
+                <p>Hva vi tilbyr:
+                    <ul>
+                        <li>Catering fra vårt verdenskjente kjøkken</li>
+                        <li>Mulighet for in-house vielse</li>
+                        <li>Profesjonell dekorasjon av lokale og borddekking</li>
+                        <li>Blomsterekorasjon fra lokal samarbeidspartner florist om ønskelig</li>
+                        <li>Fyrverkeri om ønskelig (gebyr kommer i tillegg)</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="bryllupbook">
+                <p>Kontakt oss for detaljer om booking, priser og ledige datoer</p>
+                <br>
+                <p>Tlf: +47 12 23 56 78</p>
+            </div>
+
+        </div>
+
+       
+        <div class="eventtype">
+            
+            <img src="bursdag.jpg" alt="pexels.com, fotograf: Ami Suhzu" class="bursdagbilde">
+
+            <div class="bursdaginnhold">
+                <h2>Bursdag</h2>
+               <p>Feir venner og familie på runde og ikke-runde dager hos oss</p>
+               <br>
+                <p>Hva vi tilbyr:
+                    <ul>
+                        <li>3 store lokaler med langbord og dansegulv</li>
+                        <li>Catering fra vårt verdenskjente kjøkken</li>
+                        <li>Profesjonell dekorasjon og ballonger</li>
+                        <li>Gode tillbud fra konditorier som vi samarbeider med</li>
+                        <li>Mulighet for å booke husets band eller DJ</li>
+                        <li>Ved barnebursdag: kontakt oss for detaljer</li>
+                    </ul>
+               </p>
+            </div>
+            
+            <div class="bursdagbook">
+                <p>Kontakt oss for detaljer om booking, priser og ledige datoer</p>
+                <br>
+                <p>Tlf: +47 12 23 56 78</p>
+            </div>
+
+        </div>
+
+        <div class="eventtype">
+            
+            <img src="julebord.jpg" alt="pexels.com, fotograf: Cottonbro" class="julebordbilde">
+
+            <div class="julebordinnhold">
+                <h2>Julebord</h2>
+               <p>Inviter kontoret eller venner og familie på årets julebord</p>
+               <br>
+               <p>Hva vi tilbyr:
+                    <ul>
+                        <li>3 tilpassede lokaler med langbord og dansegulv</li>
+                        <li>Dekorasjon i juletema, julenisse kan stille ved ønske</li>
+                        <li>Catering fra vårt verdenskjente kjøkken</li>
+                        <li>Mulighet for å booke husets band eller DJ</li>
+                        <li>Tur med hest og slede (gebyr kommer i tilegg)</li>
+                    </ul>
+               </p>
+            </div>
+            
+            <div class="julebordbook">
+                <p>Kontakt oss for detaljer om booking, priser og ledige datoer</p>
+                <br>
+                <p>Tlf: +47 12 23 56 78</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="kontaktoss">
+
+    </div>
+
+
+    <div class="Feirhososs">
+        <h2>Hvorfor feire dine store dager hos oss?</h2>
+
+        <br>
+
+        <p>Nedre Foss Gård er kjent for å arrangere fester og arrangementer i særklasse siden 1974.</p>
+        <p>Vi vil være med å skape minnene som varer livet ut med nære og kjære. </p>
+        <p>Med våre ulike arrangementpakker finner vi en måte å gjøre enhver anledning til en storslått opplevelse.</p>
+        <p>Når det kommer til å få våre gjester til å få den mest spesielle dagen finnes det ingen grenser, vi hører på deg!</p>
+        <p>Ingen forespørsel er for stor, ring oss gjerne for en prat om hvordan å best oppfylle alle dine ønsker.</p>
+    </div>
+
+
+
+    
 </body>
 </html>
