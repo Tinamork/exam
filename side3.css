@@ -10,6 +10,7 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 body {
@@ -86,11 +87,8 @@ nav a:hover {
     gap: 20px;
     font-family: 'Jost', sans-serif;
 
-* {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: white;
-}
- 
+
+
 a {
     color: blue;
     font-family: fantasy;
