@@ -89,12 +89,7 @@ nav a:hover {
 
 
 
-a {
-    color: blue;
-    font-family: fantasy;
-    font-size: 150%;
-}
- 
+
 
 .restaurantnavn {
     text-align: center;
@@ -162,52 +157,3 @@ a {
 }
 
 
-.footer {
-    margin-left: 15%;
-    margin-top: 10%;
-}
-
-.footer ul li {
-    list-style: none;
-    margin-top: 0%;
-    font-size: 105%;
-}
-
-.footer h2 {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 200%;
-    margin-left: 15%;
-    margin-top: 150px;
-    margin-bottom: 0px;
-}
-
-.footer h5 {
-    font-size: 150%;
-}
-
-.footer.åpningstider {
-    font-family: 'Inconsolata', monospace;
-    font-weight: bold;
-    margin-left: 4%;
-    margin-top: 0px;
-}
-
-
-.footer.omoss{
-  background-color: rgb(185, 184, 150);
-  text-align: left;
-  width: 400px;
-  height: 100px;
-  margin-top: 5%;
-  margin-bottom: 1%;
-  
-}
-
-
-.footer.omoss {
-    border-style: solid;
-    padding-right: 30px;
-    background-color: antiquewhite;
-    width: 400px;
-    
-}
