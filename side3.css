@@ -86,74 +86,30 @@ nav a:hover {
     /* grid-template-rows: 70% 30%; */
     gap: 20px;
     font-family: 'Jost', sans-serif;
-
-
-
-
-
-.restaurantnavn{
-    text-align: center;
-    font-size: 200%;
-    background: url("italiensk restaurant.webp");
-    color: black;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    opacity: 83%;
 }
- 
-.restaurantnavn h1 {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 300%;
-    background-color: transparent;
+
+
+
+footer {
+    width: 100%;
+    height: 150px;
+    background: rgb(236, 234, 234);
+    position: static;
 }
- 
-.restaurantnavn h2 {
-    font-size: 150%;
-    background-color: transparent;
-    color: black;
+
+.footer ul li {
+    list-style: none;
     
 }
- 
-.menyen {
-    margin-left: 25%;
-    margin-top: 10%;
-}
- 
-.menyen ul li {
-    list-style: georgian;
-}
- 
-.menyen h3 {
-    font-size: 200%;
-}
- 
-.menyen h4 {
-    display:block;
-    font-size: 150%;
-    margin: 30px;
-    font-weight: bold;
+
+.adresse {
+    float: left;
+    position: flex;
+    margin-left: 450px;
+    margin-top: 50px;
 }
 
-
-.allergener{
-    display: block;
-    color: rgb(45, 33, 181);
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-weight: bold;
-}
-
-.forrett {
-    margin-bottom: 100px;
-}
- 
-.hovedretter {
-    margin-bottom: 100px;
-}
- 
 .desserter {
     margin-top: 0px;
     margin-bottom: 110px;
 }
-
-
