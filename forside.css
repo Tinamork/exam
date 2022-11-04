@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -59,7 +60,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgb(175, 76, 76);
+    background-color:rgb(175, 76, 76);
     color: black;
 }
 
@@ -95,7 +96,7 @@ nav a:hover {
 }
 
 .bryllupinnhold {
-    line-height: 1, 5;
+    line-height: 1,5;
     font-size: 0.9em;
     padding: 15px;
     background: #fafafa;
@@ -117,7 +118,7 @@ nav a:hover {
 }
 
 .bursdaginnhold {
-    line-height: 1, 5;
+    line-height: 1,5;
     font-size: 0.9em;
     padding: 15px;
     background: #fafafa;
@@ -139,7 +140,7 @@ nav a:hover {
 }
 
 .julebordinnhold {
-    line-height: 1, 5;
+    line-height: 1,5;
     font-size: 0.9em;
     padding: 15px;
     background: #fafafa;
@@ -162,11 +163,11 @@ nav a:hover {
     font-size: 140%;
 }
 
-.semenyenvår button {
+.semenyenvår button{
     margin-top: 30px;
 }
 
-.semenyenvår a {
+.semenyenvår a{
     text-decoration: none;
     color: black;
     font-family: 'Jost', sans-serif;
@@ -174,7 +175,7 @@ nav a:hover {
     padding: 3px;
 }
 
-.semenyenvår a:hover {
+.semenyenvår a:hover{
     text-decoration: none;
     color: rgb(71, 67, 67);
 }
@@ -194,7 +195,7 @@ footer {
 
 .footer ul li {
     list-style: none;
-
+    
 }
 
 .adresse {
