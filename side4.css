@@ -79,6 +79,57 @@ nav a:hover {
     font-family: 'Jost', sans-serif;
 }
 
+.overskrift h1 {
+    font-size: 300%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.brukervennlighet1 {
+    margin-left: 5%;
+    margin-top: 5%;
+    text-align: left;
+    position: flex;
+    font-size: 150%;
+    height: 200%;
+}
+
+.brukervennlighetpc {
+    width: 30%;
+    float: right;
+    position: flex;
+    height: 350px;
+    padding: 2px;
+    border-style: solid;
+    border-color: rgb(190, 74, 76);
+    border-width: 2px;
+    margin-right: 5%;
+}
+
+.brukervennlighet2 {
+    margin-left: 5%;
+    margin-top: 5%;
+    text-align: left;
+    position: flex;
+    font-size: 150%;
+    height: 200%;
+}
+
+.brukervennlighetipad {
+    width: 40%;
+    float: left;
+    position: flex;
+    margin-bottom: 20%;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-top: 5%;
+    padding: 2px;
+    height: 200%;
+    border-style: solid;
+    border-color: rgb(190, 74, 76);
+    border-width: 2px;
+}
+
 footer {
     width: 100%;
     height: 300px;
