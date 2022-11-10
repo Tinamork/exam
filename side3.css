@@ -1,29 +1,26 @@
   * {
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Jost', sans-serif;
 
   }
 
-
-  /*NAVIGATION BAR^^ */
-
-  * {
+* {
       margin: 0;
       padding: 0;
 
-  }
+}
 
-  body {
+body {
       font-family: 'Jost', sans-serif;
       text-align: center;
       margin-top: 150px;
   }
 
-  .wrapper {
+.wrapper {
       width: 90%;
       margin: 0 auto;
   }
 
-  header {
+header {
       width: 100%;
       height: 100px;
       background: rgb(174, 85, 85);
@@ -31,14 +28,14 @@
       top: 0;
   }
 
-  .logo {
+.logo {
       width: 30%;
       float: left;
       text-align: left;
       line-height: 100px;
   }
 
-  .logo a {
+.logo a {
       text-decoration: none;
       font-size: 30px;
       font-family: 'Jost', sans-serif;
@@ -46,19 +43,19 @@
       letter-spacing: 4px;
   }
 
-  .barnbilde {
+.barnbilde {
       width: 10%;
       float: left;
       margin-top: 22px;
       margin-left: 20px;
   }
 
-  nav {
+nav {
       float: right;
       line-height: 100px;
   }
 
-  nav a {
+nav a {
       text-decoration: none;
       font-family: 'Jost', sans-serif;
       font-size: 20px;
@@ -67,36 +64,59 @@
       margin: 0 1px;
   }
 
-  nav a:hover {
+nav a:hover {
       background-color: white;
       color: black;
   }
 
-  .intro {
+.intro {
       margin-top: 20px;
       text-align: center;
   }
 
-  footer {
-      width: 100%;
-      height: 150px;
-      background: rgb(236, 234, 234);
-      position: static;
-  }
+footer {
+    width: 100%;
+    height: 300px;
+    background: rgb(236, 234, 234);
+    position: static;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 120%;
+    margin-top: 10%;
+    font-weight: 100;
+}
 
-  .footer ul li {
-      list-style: none;
+.footer ul {
+    display: flex;
+    justify-content: space-between;
+}
 
-  }
+.footer ul li {
+    list-style: none;
+    padding: 10%;
+    text-align: justify;
+    letter-spacing: 2px;
+}
 
-  .adresse {
-      float: left;
-      position: flex;
-      margin-left: 450px;
-      margin-top: 50px;
-  }
+.adresse {
+    position: flex;
+    width: 80%;
+    text-align: left;
+    float: right;
+}
 
-  .desserter {
-      margin-top: 0px;
-      margin-bottom: 110px;
-  }
+.adressetekst {
+    margin-top: 20%;
+}
+
+.kontaktoss {
+    text-align: center;
+    float: right;
+    position: flex;
+    box-sizing: border-box;
+}
+
+.footer iframe {
+    border-style: solid;
+}
