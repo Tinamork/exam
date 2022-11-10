@@ -83,8 +83,8 @@ nav a:hover {
 .eventtype {
     margin-top: 50px;
     border: solid;
-    border-color: rgb(77, 75, 75);
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.7);
+    border-color: rgb(208, 117, 117);
+    box-shadow: 3px 3px rgba(217, 103, 103, 0.7);
 }
 
 .eventtype ul li {
@@ -108,7 +108,7 @@ nav a:hover {
     padding: 15px;
     display: flex;
     justify-content: space-between;
-    background: #eeeeee;
+    background: #e19999;
     font-size: 0.8em;
     border-bottom: 2px solid #cccccc;
 }
@@ -130,7 +130,7 @@ nav a:hover {
     padding: 15px;
     display: flex;
     justify-content: space-between;
-    background: #eeeeee;
+    background: #e19999;
     font-size: 0.8em;
     border-bottom: 2px solid #cccccc;
 }
@@ -152,10 +152,14 @@ nav a:hover {
     padding: 15px;
     display: flex;
     justify-self: flex-end;
-    background: #eeeeee;
+    background: #e19999;
     font-size: 0.8em;
     border-bottom: 2px solid #cccccc;
     justify-content: space-between;
+}
+
+.infodel {
+    margin-top: 5%;
 }
 
 .semenyenvår {
@@ -193,6 +197,13 @@ nav a:hover {
     margin-top: 50px;
     margin-bottom: 100px;
     font-size: 140%;
+}
+
+.bordbilde {
+    width: 30%;
+    float: left;
+    padding: 1%;
+    margin-top: 1%;
 }
 
 footer {
