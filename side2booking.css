@@ -110,7 +110,7 @@ nav a:hover {
     justify-content: space-between;
     background: #e19999;
     font-size: 0.8em;
-    border-bottom: 2px solid #cccccc;
+    border-bottom: 2px solid rgba(217, 103, 103, 0.7);
 }
 
 .bursdagbilde {
@@ -132,7 +132,7 @@ nav a:hover {
     justify-content: space-between;
     background: #e19999;
     font-size: 0.8em;
-    border-bottom: 2px solid #cccccc;
+    border-bottom: 2px solid rgba(217, 103, 103, 0.7);
 }
 
 .julebordbilde {
@@ -154,8 +154,9 @@ nav a:hover {
     justify-self: flex-end;
     background: #e19999;
     font-size: 0.8em;
-    border-bottom: 2px solid #cccccc;
+    border-bottom: 2px solid rgba(217, 103, 103, 0.7);
     justify-content: space-between;
+    margin-bottom: 0.2em;
 }
 
 .infodel {
@@ -204,6 +205,9 @@ nav a:hover {
     float: left;
     padding: 1%;
     margin-top: 1%;
+    border-style: solid;
+    border-color: #e19999;
+    margin-left: 1%;
 }
 
 footer {
