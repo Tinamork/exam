@@ -86,126 +86,134 @@ nav a:hover {
     border-radius: 5px;
 }
 
-.intro {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 150%;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 1000px;
+.Velkommen {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 20px 40px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+}
+.VelkommenBilde{
+    width: 575px;
+    height: 500px;
+}
+.Velkommen p {
+    font-size: 25px;
+}
+.Velkommen h1{
+    color:rgb(175, 76, 76);
+    font-size: 45px
+}
+.Velkommen h2{
+    color:rgb(175, 76, 76);
+    font-size: 35px;
+}
+
+
+
+.grid-item {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+
+
+.booking button {
+    padding: 2%;
+    border: 10px solid rgb(175, 76, 76);
+    width: -webkit-fill-available;
+    background-color: rgba(238, 101, 101, 0.7);
+}
+.booking a {
+    text-decoration: none;
+    color: white;
     font-family: 'Jost', sans-serif;
+    font-size: 25px;
 }
-
-.eventtype {
-    margin-top: 50px;
-    border: solid;
-    border-color: rgb(77, 75, 75);
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.7);
-}
-
-.eventtype ul li {
-    list-style: none;
-}
-
-.bryllupbilde {
-    width: 100%;
-    display: block;
-}
-
-.bryllupinnhold {
-    line-height: 1,5;
-    font-size: 0.9em;
-    padding: 15px;
-    background: #fafafa;
-    text-align: left;
-}
-
-.bryllupbook {
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    background: #eeeeee;
-    font-size: 0.8em;
-    border-bottom: 2px solid #cccccc;
-}
-
-.bursdagbilde {
-    width: 100%;
-    display: block;
-}
-
-.bursdaginnhold {
-    line-height: 1,5;
-    font-size: 0.9em;
-    padding: 15px;
-    background: #fafafa;
-    text-align: left;
-}
-
-.bursdagbook {
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    background: #eeeeee;
-    font-size: 0.8em;
-    border-bottom: 2px solid #cccccc;
-}
-
-.julebordbilde {
-    width: 100%;
-    display: block;
-}
-
-.julebordinnhold {
-    line-height: 1,5;
-    font-size: 0.9em;
-    padding: 15px;
-    background: #fafafa;
-    text-align: left;
-}
-
-.julebordbook {
-    padding: 15px;
-    display: flex;
-    justify-self: flex-end;
-    background: #eeeeee;
-    font-size: 0.8em;
-    border-bottom: 2px solid #cccccc;
-    justify-content: space-between;
-}
-
-.semenyenvår {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 140%;
-}
-
-.semenyenvår button{
-    margin-top: 30px;
-}
-
-.semenyenvår a{
+.booking a:hover {
     text-decoration: none;
     color: black;
-    font-family: 'Jost', sans-serif;
-    font-size: 150%;
-    padding: 3px;
+    background-color: rgb(175, 76, 76);
 }
 
-.semenyenvår a:hover{
-    text-decoration: none;
-    color: rgb(71, 67, 67);
+
+
+.Omoss {
+    display: grid;
+    gap: 20px 40px;
+    grid-template-columns: auto auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+}
+.Omoss p {
+    font-size: 18px;
+    padding-top: 3%;
+}
+.Omoss h2{
+    color:rgb(175, 76, 76);
+    font-size: 40px; 
+}
+.OmossBilde {
+    width: 575px;
+    height: 500px;
 }
 
-.Feirhososs {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    font-size: 140%;
+
+
+hr {
+    border: 1px solid rgba(238, 101, 101, 0.7);
+}
+
+
+
+.info {
+    display: grid;
+    gap: 20px 40px;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.infoBilder {
+    width: 400px;
+    height: 300px;
+}
+.info p  {
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 3%;
+}
+.info h3  {
+    text-align: left;
+    color: rgb(175, 76, 76);
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 1%;
+}
+.info h4 {
+    text-align: left;
+    color:rgb(175, 76, 76);
+    font-size: 20px;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+.info a:link {
+    color:rgb(175, 76, 76)
+  } 
+.info a:visited{
+    color: rgb(175, 76, 76);
+} 
+.info a:hover {
+    text-decoration: underline;
+    color:rgba(238, 101, 101, 0.7);
+} 
+.info a:active {
+    text-decoration: underline;
+    color: rgb(175, 76, 76);
 }
 
 footer {
@@ -217,6 +225,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     font-size: 120%;
+    margin-top: 50px;
 }
 
 
