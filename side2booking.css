@@ -13,6 +13,7 @@ body {
 .wrapper {
     width: 90%;
     margin: 0 auto;
+    border: 1px solid black;
 }
 
 header {
@@ -221,36 +222,12 @@ footer {
     font-size: 120%;
 }
 
-.footer ul {
-    display: flex;
-    justify-content: space-between;
-}
 
-.footer ul li {
+.footerinfo ul {
     list-style: none;
-    padding: 10%;
-    text-align: justify;
-    letter-spacing: 2px;
 }
 
-.adresse {
-    position: flex;
-    width: 80%;
-    text-align: left;
-    float: right;
-}
-
-.adressetekst {
-    margin-top: 20%;
-}
-
-.kontaktoss {
-    text-align: center;
-    float: right;
-    position: flex;
-    box-sizing: border-box;
-}
-
-.footer iframe {
-    border-style: solid;
+.footerinfo {
+    list-style: none;
+    display: flex;
 }
