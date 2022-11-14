@@ -17,7 +17,6 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -61,7 +60,6 @@ nav {
     margin-right: 4%;
     width: 50%;
     height: 100%;
-
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -71,12 +69,11 @@ nav a {
     text-decoration: none;
     font-size: 1.5vw;
     color: white;
-
     height: 90%;
-
     padding: 0 2% 0 2%;
     display: flex;
     align-items: center;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 nav a:hover {
@@ -92,6 +89,9 @@ nav a:hover {
     text-align: center;
     font-size: 150%;
 }
+.intro h1{
+    color: rgb(175, 76, 76);
+}
 
 .container {
     margin: 0 auto;
@@ -100,6 +100,9 @@ nav a:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     font-family: 'Jost', sans-serif;
+}
+.container h2{
+    color:rgb(175, 76, 76);
 }
 
 .eventtype {
@@ -184,6 +187,9 @@ nav a:hover {
 .infodel {
     margin-top: 5%;
 }
+.infodel h2{
+    color: rgb(175, 76, 76);
+}
 
 .semenyenvår {
     margin-top: 50px;
@@ -193,22 +199,24 @@ nav a:hover {
 
 .semenyenvår button{
     margin-top: 2%;
-    border: 2px solid rgba(238, 101, 101, 0.7);
+    border: 2px solid rgb(175, 76, 76);
     border-radius: 1000px;
+    background-color: #e19999;
     padding: 1%;
 }
 
 .semenyenvår a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: 'Jost', sans-serif;
     font-size: 150%;
     padding: 3px;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 .semenyenvår a:hover{
     text-decoration: none;
-    color: rgb(177, 74, 93);
+    color: black;
 }
 
 .semenyenvår a::after {
@@ -228,7 +236,7 @@ nav a:hover {
     padding: 1%;
     margin-top: 1%;
     border-style: solid;
-    border-color: #e19999;
+    border-color: rgb(175, 76, 76);
     margin-left: 1%;
 }
 
