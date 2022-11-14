@@ -17,7 +17,6 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -71,12 +70,11 @@ nav a {
     text-decoration: none;
     font-size: 1.5vw;
     color: white;
-
     height: 90%;
-
     padding: 0 2% 0 2%;
     display: flex;
     align-items: center;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 nav a:hover {
@@ -88,17 +86,19 @@ nav a:hover {
 
 .Velkommen {
     display: grid;
-    gap: 20px 40px;
+    gap: 20px 20px;
     grid-template-columns: auto auto;
     justify-content: center;
     justify-items: center;
     align-items: center;
-    padding-bottom: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 .VelkommenBilde{
-    width: 575px;
+    width: 600px;
     height: 500px;
+    border-style: solid;
+    border-color: rgb(174, 85, 85);
+    padding: 3%;
 }
 .Velkommen p {
     font-size: 25px;
@@ -115,8 +115,8 @@ nav a:hover {
 
 
 .grid-item {
-    padding-left: 70px;
-    padding-right: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 
@@ -125,13 +125,14 @@ nav a:hover {
     padding: 2%;
     border: 10px solid rgb(174, 85, 85);
     width: -webkit-fill-available;
-    background-color: rgba(238, 101, 101, 0.7);
+    background-color: #e19999;
 }
 .booking a {
     text-decoration: none;
     color: white;
     font-family: 'Jost', sans-serif;
     font-size: 25px;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 .booking a:hover {
     text-decoration: none;
@@ -163,6 +164,9 @@ nav a:hover {
 .OmossBilde {
     width: 575px;
     height: 500px;
+    border-style: solid;
+    border-color: rgb(174, 85, 85);
+    padding: 3%;
 }
 
 
@@ -184,6 +188,9 @@ hr {
 .infoBilder {
     width: 400px;
     height: 300px;
+    border-style: solid;
+    border-color: rgb(174, 85, 85);
+    padding: 3%;
 }
 .info p  {
     font-size: 18px;
