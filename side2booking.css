@@ -84,6 +84,7 @@ nav a:hover {
 }
 
 
+
 .intro {
     margin-top: 10%;
     text-align: center;
@@ -93,14 +94,18 @@ nav a:hover {
     color: rgb(175, 76, 76);
 }
 
+
+
+
 .container {
     margin: 0 auto;
     max-width: 1000px;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    font-family: 'Jost', sans-serif;
 }
+
 .container h2{
     color:rgb(175, 76, 76);
 }
@@ -116,14 +121,14 @@ nav a:hover {
     list-style: none;
 }
 
-.bryllupbilde {
+.eventbilde {
     width: 100%;
     display: block;
 }
 
-.bryllupinnhold {
+.eventInnhold {
     line-height: 1,5;
-    font-size: 0.9em;
+    font-size: 1.2em;
     padding: 15px;
     background: #fafafa;
     text-align: left;
@@ -134,21 +139,8 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     background: #e19999;
-    font-size: 0.8em;
+    font-size: 1em;
     border-bottom: 2px solid rgba(217, 103, 103, 0.7);
-}
-
-.bursdagbilde {
-    width: 100%;
-    display: block;
-}
-
-.bursdaginnhold {
-    line-height: 1,5;
-    font-size: 0.9em;
-    padding: 15px;
-    background: #fafafa;
-    text-align: left;
 }
 
 .bursdagbook {
@@ -156,33 +148,24 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     background: #e19999;
-    font-size: 0.8em;
+    font-size: 1em;
     border-bottom: 2px solid rgba(217, 103, 103, 0.7);
-}
-
-.julebordbilde {
-    width: 100%;
-    display: block;
-}
-
-.julebordinnhold {
-    line-height: 1,5;
-    font-size: 0.9em;
-    padding: 15px;
-    background: #fafafa;
-    text-align: left;
+    margin-bottom: auto;
 }
 
 .julebordbook {
     padding: 8%;
     display: flex;
-    justify-self: flex-end;
     background: #e19999;
-    font-size: 0.8em;
+    font-size: 1em;
     border-bottom: 2px solid rgba(217, 103, 103, 0.7);
     justify-content: space-between;
-    margin-bottom: 0.2em;
+    margin-bottom: auto;
 }
+
+
+
+
 
 .infodel {
     margin-top: 5%;
@@ -243,48 +226,45 @@ nav a:hover {
 
 
 
+
+
 .bookOnline {
-    display: grid;
-    grid-template-rows: (2, 1fr);
-    padding: 3%;
-    justify-content: space-between;
+    padding: 2%;
     font-size: 120%;
-    margin-left: 15%;
 }
 
 .input-element {
     margin: 20px 0;
-  }
+}
   
 .input-element.inlined {
-width: 49%;
-display: inline-block;
-margin-left: 3%;
-margin-right: 3%;
+    width: 49%;
+    display: inline-block;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 label {
-display: block;
-padding-bottom: 10px;
-font-size: 1.1em;
+    display: block;
+    padding-bottom: 10px;
+    font-size: 1.1em;
 }
 
 input {
-border-radius: 2px;
-border: 2px solid #777;
-font-size: 1.1em;
-width: 70%;
-padding: 10px;
+    border-radius: 2px;
+    border: 2px solid #777;
+    font-size: 1.1em;
+    width: 70%;
+    padding: 10px;
 }
 
   
   
-  .knapp button {
+.knapp button {
     margin-bottom: 3%;
     border: 2px solid rgb(175, 76, 76);
     background-color: #e19999;
     color: white;
-    font-family: 'Jost', sans-serif;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 
     border-radius: 1000px;
@@ -296,6 +276,7 @@ padding: 10px;
 
 .knapp p {
     padding: 3%;
+    font-family: 'Jost', sans-serif;
 }
 
 
@@ -311,7 +292,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 120%;
+    font-size: 1.2em;
 }
 
 
