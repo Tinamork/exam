@@ -168,7 +168,6 @@ hr {
 #matlaging {
   display: flex;
   width: 90%;
-  
 }
 
 #pizza {
@@ -179,7 +178,11 @@ hr {
 #gelato {
   display: flex;
   width: 90%;
+}
 
+#dekketbord {
+  display: flex;
+  width: 90%;
 }
 
 
