@@ -10,6 +10,13 @@ body {
     margin-top: 150px;
 }
 
+@media screen and (max-width: 700px) {
+    .Velkommen, .Omoss, .info{
+        flex-direction: column;
+    }
+    
+}
+
 header {
     width: 100%;
     height: 15%;
@@ -85,17 +92,14 @@ nav a:hover {
 }
 
 .Velkommen {
-    display: grid;
-    gap: 20px 20px;
-    grid-template-columns: auto auto;
+    display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
     margin-bottom: 80px;
 }
 .VelkommenBilde{
-    width: 600px;
-    height: 500px;
+    width: 100%;
     border-style: solid;
     border-color: rgb(174, 85, 85);
     padding: 3%;
@@ -146,9 +150,7 @@ nav a:hover {
 
 
 .Omoss {
-    display: grid;
-    gap: 20px 40px;
-    grid-template-columns: auto auto;
+    display: flex;
     margin-top: 50px;
     margin-bottom: 50px;
     align-items: center;
@@ -162,8 +164,7 @@ nav a:hover {
     font-size: 40px; 
 }
 .OmossBilde {
-    width: 575px;
-    height: 500px;
+   width: 100%;
     border-style: solid;
     border-color: rgb(174, 85, 85);
     padding: 3%;
@@ -178,16 +179,13 @@ hr {
 
 
 .info {
-    display: grid;
-    gap: 20px 40px;
-    grid-template-columns: auto auto;
+    display: flex;
     align-items: center;
     margin-top: 50px;
     margin-bottom: 10px;
 }
 .infoBilder {
-    width: 400px;
-    height: 300px;
+    width: 50%;
     border-style: solid;
     border-color: rgb(174, 85, 85);
     padding: 3%;
