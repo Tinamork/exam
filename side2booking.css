@@ -187,6 +187,7 @@ nav a:hover {
 .infodel {
     margin-top: 5%;
 }
+
 .infodel h2{
     color: rgb(175, 76, 76);
 }
@@ -255,26 +256,26 @@ nav a:hover {
     margin: 20px 0;
   }
   
-  .input-element.inlined {
-    width: 49%;
-    display: inline-block;
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-  
-  label {
-    display: block;
-    padding-bottom: 10px;
-    font-size: 1.1em;
-  }
-  
-  input {
-    border-radius: 2px;
-    border: 2px solid #777;
-    font-size: 1.1em;
-    width: 70%;
-    padding: 10px;
-  }
+.input-element.inlined {
+width: 49%;
+display: inline-block;
+margin-left: 3%;
+margin-right: 3%;
+}
+
+label {
+display: block;
+padding-bottom: 10px;
+font-size: 1.1em;
+}
+
+input {
+border-radius: 2px;
+border: 2px solid #777;
+font-size: 1.1em;
+width: 70%;
+padding: 10px;
+}
 
   
   
@@ -290,6 +291,11 @@ nav a:hover {
     padding: 5%;
     font-size: 150%;
     padding: 3px;
+    width: 30%;
+}
+
+.knapp p {
+    padding: 3%;
 }
 
 
