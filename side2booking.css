@@ -187,6 +187,7 @@ nav a:hover {
 .infodel {
     margin-top: 5%;
 }
+
 .infodel h2{
     color: rgb(175, 76, 76);
 }
@@ -240,86 +241,63 @@ nav a:hover {
     margin-left: 1%;
 }
 
+
+
 .bookOnline {
     display: grid;
     grid-template-rows: (2, 1fr);
     padding: 3%;
     justify-content: space-between;
-    font-size: 150%;
+    font-size: 120%;
+    margin-left: 15%;
 }
 
-
-/*
-
-.bookOnline h3 {
-    font-size: 240%;
-    display: inline-block;
-}
-
-input {
-    border-color: rgb(214, 214, 213);
-    border-radius: 5px;
-    height: 40%;
-    width: auto;
-    
-}
-
-.fyllInn {
-    padding: 3%;
-}
-
-.inputBoks {
-    display: inline;
-}
-
-.bookOnline button {
-    border-radius: 5px;
-    border: 1px solid #e19999;
-    padding: 1%;
-    margin-top: 15px;
-}
-*/
-
-
-
-
-div.elem-group {
+.input-element {
     margin: 20px 0;
   }
   
-  div.elem-group.inlined {
-    width: 49%;
-    display: inline-block;
-    float: left;
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-  
-  label {
-    display: block;
-    padding-bottom: 10px;
-    font-size: 1.25em;
-  }
-  
-  input {
-    border-radius: 2px;
-    border: 2px solid #777;
-    font-size: 1.25em;
-    width: 70%;
-    padding: 10px;
-  }
-  
-  div.elem-group.inlined input {
-    width: 95%;
-    display: inline-block;
-  }
-
-  .bookOnline button {
-    border-radius: 5px;
-    border: 1px solid #e19999;
-    padding: 1%;
-    margin-top: 15px;
+.input-element.inlined {
+width: 49%;
+display: inline-block;
+margin-left: 3%;
+margin-right: 3%;
 }
+
+label {
+display: block;
+padding-bottom: 10px;
+font-size: 1.1em;
+}
+
+input {
+border-radius: 2px;
+border: 2px solid #777;
+font-size: 1.1em;
+width: 70%;
+padding: 10px;
+}
+
+  
+  
+  .knapp button {
+    margin-bottom: 3%;
+    border: 2px solid rgb(175, 76, 76);
+    background-color: #e19999;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+    border-radius: 1000px;
+    padding: 5%;
+    font-size: 150%;
+    padding: 3px;
+    width: 30%;
+}
+
+.knapp p {
+    padding: 3%;
+}
+
 
 
 
