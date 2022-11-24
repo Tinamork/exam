@@ -130,7 +130,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 120%;
+    font-size: 1.2em;
     margin-top: 50px;
 }
 .footerinfo ul {
