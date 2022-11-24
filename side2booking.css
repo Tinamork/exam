@@ -94,7 +94,8 @@ nav a:hover {
 
 
 .intro {
-    margin-top: 10%;
+    margin-top: 12%;
+    margin-bottom: 5%;
     text-align: center;
     font-size: 150%;
 }
@@ -119,8 +120,12 @@ nav a:hover {
 }
 
 .eventtype {
-    margin-top: 15%;
-    border: solid;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    border: solid 1px black;
     border-color: rgb(208, 117, 117);
     box-shadow: 3px 3px rgba(217, 103, 103, 0.7);
 }
@@ -135,43 +140,27 @@ nav a:hover {
 }
 
 .eventInnhold {
-    line-height: 1,5;
-    font-size: 1.2em;
     padding: 15px;
     background: #fafafa;
     text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-size: 1.2em;
 }
 
-.bryllupbook {
+.book-kontakt {
+    margin-top: auto;
+
     padding: 8%;
     display: flex;
-    justify-content: space-between;
-    background: #e19999;
+
+    background-color: #e19999;
     font-size: 1em;
     border-bottom: 2px solid rgba(217, 103, 103, 0.7);
 }
-
-.bursdagbook {
-    padding: 8%;
-    display: flex;
-    justify-content: space-between;
-    background: #e19999;
-    font-size: 1em;
-    border-bottom: 2px solid rgba(217, 103, 103, 0.7);
-    margin-bottom: auto;
-}
-
-.julebordbook {
-    padding: 8%;
-    display: flex;
-    background: #e19999;
-    font-size: 1em;
-    border-bottom: 2px solid rgba(217, 103, 103, 0.7);
-    justify-content: space-between;
-    margin-bottom: auto;
-}
-
-
 
 
 
