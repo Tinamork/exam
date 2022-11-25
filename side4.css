@@ -5,23 +5,33 @@
 }
 
 body {
+    margin-top: 150px;
+
     font-family: 'Jost', sans-serif;
     text-align: center;
-    margin-top: 150px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .brukervennlighet {
+        flex-direction: column;
+    }
+    
 }
 
 header {
     width: 100%;
     height: 15%;
-    background: rgb(174, 85, 85);
-    position: fixed;
     top: 0;
     left: 0;
 
+    position: fixed;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+
+    background: rgb(174, 85, 85);
+    align-items: center;
 }
 
 .logo {
@@ -39,22 +49,24 @@ header {
 .logo a {
     height: 100%;
     width: 100%;
-    text-decoration: none;
 
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
     align-items: center;
     font-size: 2.8vw;
+    text-decoration: none;
 }
 
 .logo a p {
-    font-family: 'Marck Script', cursive;
-    color: white;
     width: 70%;
     max-height: 100%;
-    text-align: center;
     margin-right: 23%;
+
+    font-family: 'Marck Script', cursive;
+    color: white;
+    text-align: center;
 }
 
 nav {
@@ -81,87 +93,73 @@ nav a {
 }
 
 nav a:hover {
+    border-radius: 5px;
+
     background-color: rgb(180, 107, 107);
     color: black;
     font-weight: 600;
-    border-radius: 5px;
 }
 
 
-.intro {
-    margin-top: 20px;
-    text-align: center;
+
+
+
+
+h1 {
+    margin-top: 5%;
+    margin-bottom: 2%;
+
+    font-size: 340%;
+    color: rgb(175, 76, 76);
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 1000px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: 70% 30%; */
-    gap: 20px;
-    font-family: 'Jost', sans-serif;
-}
-
-.overskrift h1 {
-    font-size: 300%;
-    margin-top: 3%;
+.undertittel {
     margin-bottom: 3%;
+
+    font-size: 200%;
 }
 
-.brukervennlighet1 {
-    margin-left: 5%;
-    margin-top: 5%;
-    text-align: left;
-    position: flex;
-    font-size: 150%;
-    height: 200%;
+.brukervennlighet {
+    margin-bottom: 3%;
+    padding: 1%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    font-size: 180%;
 }
 
-.brukervennlighetpc {
-    width: 30%;
-    float: right;
-    position: flex;
-    height: 350px;
-    padding: 2px;
-    border-style: solid;
-    border-color: rgb(190, 74, 76);
-    border-width: 2px;
-    margin-right: 5%;
+img {
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 50%;
+    height: 100%;
+    padding: 1%;
+
+    border: 2px solid rgb(175, 76, 76);
 }
 
-.brukervennlighet2 {
-    margin-right: 4%;
-    margin-top: 5%;
-    text-align: left;
-    position: flex;
-    font-size: 150%;
-    height: 200%;
+.brukervennlighet p {
+    padding: 1%;
 }
 
-.brukervennlighetipad {
-    width: 40%;
-    float: left;
-    position: flex;
-    margin-bottom: 20%;
-    margin-left: 5%;
-    margin-right: 2%;
-    margin-top: 5%;
-    padding: 2px;
-    height: 200%;
-    border-style: solid;
-    border-color: rgb(190, 74, 76);
-    border-width: 2px;
-}
+
+
+
+
 
 footer {
     width: 100%;
     height: 300px;
-    background: rgb(236, 234, 234);
+
     position: static;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    background: rgb(236, 234, 234);
     font-size: 1.2em;
 }
 
@@ -172,5 +170,6 @@ footer {
 
 .footerinfo {
     list-style: none;
+
     display: flex;
 }

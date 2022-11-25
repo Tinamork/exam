@@ -5,11 +5,11 @@
 }
 
 body {
-    font-family: 'Jost', sans-serif;
-    text-align: center;
-
     /*Margin top her for at ikke det øverste på siden skulle falle under navigasjonsbaren (som hendte uansett hvis ikke)*/
     margin-top: 150px;
+
+    font-family: 'Jost', sans-serif;
+    text-align: center;
 }
 
 
