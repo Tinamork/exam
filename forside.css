@@ -17,7 +17,13 @@ body {
     .Velkommen{
         flex-direction: column-reverse;
     }
-    .VelkommenBilde, .OmossBilde, .infoBilder{
+    .VelkommenBilde{
+        margin-top: 50px;
+    }
+    .OmossBilde{
+        margin-top: 50px;
+    }
+    .infoBilder{
         margin-top: 50px;
     }
     .footer{
@@ -130,9 +136,13 @@ nav a:hover {
     font-size: 35px;
 }
 
+.flex-item-left, .flex-item-right{
+    flex: 50%;
+    margin-left: 70px;
+    margin-right: 70px;
+}
 
-
-.grid-item {
+.flex-item {
     margin-left: 70px;
     margin-right: 70px;
 }
