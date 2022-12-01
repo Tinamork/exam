@@ -136,6 +136,9 @@ nav a:hover {
     font-size: 35px;
 }
 
+
+
+
 .flex-item-left, .flex-item-right{
     flex: 50%;
     margin-left: 70px;
@@ -143,9 +146,11 @@ nav a:hover {
 }
 
 .flex-item {
+    flex: 50%;
     margin-left: 70px;
     margin-right: 70px;
 }
+
 
 
 
@@ -188,7 +193,7 @@ nav a:hover {
     font-size: 40px; 
 }
 .OmossBilde {
-   width: 100%;
+    width: 100%;
     border-style: solid;
     border-color: rgb(174, 85, 85);
     padding: 3%;
@@ -206,10 +211,10 @@ hr {
     display: flex;
     align-items: center;
     margin-top: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 .infoBilder {
-    width: 50%;
+    width: 70%;
     border-style: solid;
     border-color: rgb(174, 85, 85);
     padding: 3%;
@@ -247,6 +252,17 @@ hr {
     text-decoration: underline;
     color: rgb(175, 76, 76);
 }
+.flex-item1 {
+    flex: 70%;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.flex-item2 {
+    flex: 30%;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
 
 footer {
     max-width: 100%;
