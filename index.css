@@ -5,11 +5,14 @@
 }
 
 body {
+    /*Margin top her for at ikke det øverste på siden skulle falle under navigasjonsbaren (som hendte uansett hvis ikke)*/
+    margin-top: 150px;
+
     font-family: 'Jost', sans-serif;
     text-align: center;
-    margin-top: 150px;
 }
 
+/*Endringer i noen CSS for å tilpasse innholdet best mulig for fleste telefonskjerm */
 @media screen and (max-width: 700px) {
     .Velkommen, .Omoss, .info{
         flex-direction: column;
@@ -37,6 +40,9 @@ body {
     
 }
 
+
+
+/*Koden som tilhører navigasjonsbaren (denne er lik for alle fem sidene):*/
 header {
     width: 100%;
     height: 15%;
@@ -111,6 +117,8 @@ nav a:hover {
     border-radius: 5px;
 }
 
+
+/*Kode til alt innholdet av(bilde, tekst og display) Velkomst informasjon til nettsiden*/
 .Velkommen {
     display: flex;
     justify-content: center;
@@ -135,25 +143,16 @@ nav a:hover {
     color:rgb(175, 76, 76);
     font-size: 35px;
 }
-
-
-
-
 .flex-item-left, .flex-item-right{
     flex: 50%;
     margin-left: 70px;
     margin-right: 70px;
 }
 
-.flex-item {
-    flex: 50%;
-    margin-left: 70px;
-    margin-right: 70px;
-}
 
 
 
-
+/*Kode til knapp som leder til bookingsiden*/
 .booking button {
     padding: 2%;
     border: 10px solid rgb(174, 85, 85);
@@ -178,11 +177,17 @@ nav a:hover {
 
 
 
+/*Kode til all layout av Om oss delen av siden*/
 .Omoss {
     display: flex;
     margin-top: 50px;
     margin-bottom: 50px;
     align-items: center;
+}
+.flex-item {
+    flex: 50%;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 .Omoss p {
     font-size: 18px;
@@ -206,12 +211,22 @@ hr {
 }
 
 
-
+/*Kode for innhold av enda mer relevant info om vår restaurant/catering*/
 .info {
     display: flex;
     align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+.flex-item1 {
+    flex: 70%;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.flex-item2 {
+    flex: 30%;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 .infoBilder {
     width: 70%;
@@ -252,18 +267,12 @@ hr {
     text-decoration: underline;
     color: rgb(175, 76, 76);
 }
-.flex-item1 {
-    flex: 70%;
-    margin-left: 70px;
-    margin-right: 70px;
-}
-.flex-item2 {
-    flex: 30%;
-    margin-left: 70px;
-    margin-right: 70px;
-}
 
 
+
+
+
+/*Kode for alt som befinner seg i footer (Også lik for alle fem sidene): */
 footer {
     max-width: 100%;
     height: 300px;
