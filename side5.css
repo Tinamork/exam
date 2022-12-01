@@ -8,136 +8,305 @@ body {
     font-family: 'Jost', sans-serif;
     text-align: center;
     margin-top: 150px;
+    height: 100%;
 }
+
+
+@media screen and (max-width: 700px){
+    body {
+        size-adjust: 100%;
+        
+      }
+    body p{
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: small;
+    }
+    body img{
+       width: 100%; 
+    }
+    .førsteavsnitt, .andreavsnitt, .sisteavsnitt, .innledning, .mellomavsnitt{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .h1 {
+        font-size: small;
+
+    }
+      
+}
+
+
+@media screen and (max-width:700px) {
+
+    .footer{
+        height:200px;
+        font-size: x-small;
+    }
+    .footer iframe{
+        width: 200px;
+        height: 150px;
+    }
+}
+
 
 header {
     width: 100%;
     height: 15%;
     background: rgb(174, 85, 85);
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-
+  
+    position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
-
-.logo {
+  
+    background: rgb(174, 85, 85);
+  }
+  
+  .logo {
     width: 30%;
     height: 100%;
     margin-left: 2%;
-}
-
-.logo img {
+  }
+  
+  .logo img {
     width: 15%;
     height: auto;
-    margin-left: 8%;
-}
-
-.logo a {
-    height: 100%;
-    width: 100%;
+    margin-left: 30%;
+   
+  }
+  
+  .logo a {
+    font-size: 2.8vw;
     text-decoration: none;
-
+  
+    width: 100%;
+    height: 100%;
+  
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    justify-items: flex-start;
     align-items: center;
-    font-size: 2.8vw;
-}
-
-.logo a p {
-    font-family: 'Marck Script', cursive;
-    color: white;
+  }
+  
+  .logo a p {
     width: 70%;
     max-height: 100%;
-    text-align: center;
     margin-right: 23%;
-}
-
-nav {
+    
+    font-size: 2.5vw;
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    color: white;
+  }
+  
+  nav {
     margin-right: 4%;
     width: 50%;
     height: 100%;
-
+  
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-
-nav a {
+  }
+  
+  nav a {
+    height: 90%;
+    padding: 0 2% 0 2%;
+    display: flex;
+  
+    align-items: center;
     text-decoration: none;
     font-size: 1.5vw;
     color: white;
-
-    height: 90%;
-
-    padding: 0 2% 0 2%;
-    display: flex;
-    align-items: center;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-}
-
-nav a:hover {
+  }
+  
+  nav a:hover {
+    text-decoration: none;
     background-color: rgb(180, 107, 107);
     color: black;
     font-weight: 600;
     border-radius: 5px;
-}
+  }
+  
 
-.intro {
-    margin-top: 20px;
+
+
+#overskrift{
     text-align: center;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 1000px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: 70% 30%; */
-    gap: 20px;
-    font-family: 'Jost', sans-serif;
-}
-
-.header{
+    font-size: 125%;
     color: black;
-    text-align: center;
-}
-
-.tekst{
-    text-align: center;
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 100px;
+    font-family:'Orbitron', sans-serif;
+    padding: 10%;
+    background-color:white;
     
 }
 
-#enmann{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+
+p{
+    font-size: x-large;
+    text-align: left;
+    margin-bottom: 3%;
+    
+    padding: 30px 0;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
-footer {
-    width: 100%;
-    height: 300px;
-    background: rgb(236, 234, 234);
-    position: static;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 1.2em;
-    margin-top: 50px;
+
+p.important{
+   /* border-style: solid;   for å få en ramme rundt den*/
+    border-width: 3px;
+    border-color: #AE5555;
+    
 }
+
+.førsteavsnitt{
+    color: black;
+    text-align: center;
+    display: flex;
+    
+    margin-bottom:1%;
+    /*margin-left: 300px;
+    margin-right: 300px;*/
+}
+
+#underoverskrift{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    
+}
+
+h3{
+    font-size: 30px;
+    font-family:'Orbitron', sans-serif; 
+    
+    display: block;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+.innledning h2{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5%;
+}
+
+.innledningsboks{
+    background-color: rgb(220, 220, 220);
+    padding: 3%;
+}
+
+
+.andreavsnitt{
+    text-align: center;
+    /*margin-left: 300px;
+    margin-right: 300px;*/
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+a{
+  text-decoration: none;
+  color: #AE5555;
+}
+
+
+iframe{
+    width: 600px;
+    height: 250px;
+}
+
 .footerinfo ul {
     list-style: none;
 }
+
 .footerinfo {
     list-style: none;
-    display: flex;
 }
 
+a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+.parallax {
+    /* Bilde hentet fra: https://www.pexels.com/nb-no/bilde/oppdagelse-verden-astronomi-kule-220201/, bilde tatt av Pexabay */ 
+    background-image: url("verdensrommet.jpeg");
+    height: 50%;
+    
+    font-size: 36px;
+    font-style: italic;
+    
+
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+
+.andreparallax{
+     /* Bilde hentet fra: https://www.pexels.com/nb-no/bilde/fjell-uskarphet-sfaere-eventyr-346885/, bilde tatt av Doner */ 
+    background-image: url("jordklode.webp");
+    height: 50%;
+
+    font-size: 36px;
+    font-style: italic;
+
+    min-height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.sisteavsnitt{
+    text-align: center;
+}
+
+.bilder{
+
+    display: flex;
+    width: 30%;
+    
+}
+
+
+.grid-container {
+   /* display: grid;
+    grid-template-rows: auto;
+    padding: 10px;
+    */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5%;
+   
+}
+
+
+.bilder1{
+    width: 80%;
+    border-radius: 50px;
+}

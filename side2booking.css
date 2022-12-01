@@ -17,11 +17,21 @@ body {
 
 /*Forsøk gjort på å bedre tilpasse innholdet ulike skjermstørrelser*/
 
-@media screen and (max-width:700px) {
-    .intro, .container, .infodel, .bookOnline{
-        size-adjust: 100%;
+@media screen and (max-width: 700px) {
+    .intro .container .infodel {
+        flex-direction: column;
+        padding: 4%;
     }
-    
+    .footer{
+        height:200px;
+
+
+        font-size: x-small;
+    }
+    .footer iframe{
+        width: 200px;
+        height: 150px;
+    }
 }
 
 
@@ -39,10 +49,10 @@ header {
     position: fixed;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
 
     background: rgb(174, 85, 85);
+    align-items: center;
 }
 
 .logo {
@@ -58,16 +68,16 @@ header {
 }
 
 .logo a {
-    font-size: 2.8vw;
-    text-decoration: none;
-
-    width: 100%;
     height: 100%;
+    width: 100%;
 
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
     align-items: center;
+    font-size: 2.8vw;
+    text-decoration: none;
 }
 
 .logo a p {
@@ -75,9 +85,9 @@ header {
     max-height: 100%;
     margin-right: 23%;
 
-    text-align: center;
     font-family: 'Marck Script', cursive;
     color: white;
+    text-align: center;
 }
 
 nav {
@@ -91,23 +101,26 @@ nav {
 }
 
 nav a {
-    height: 90%;
-    padding: 0 2% 0 2%;
-    display: flex;
-
-    align-items: center;
     text-decoration: none;
     font-size: 1.5vw;
     color: white;
+
+    height: 90%;
+
+    padding: 0 2% 0 2%;
+    display: flex;
+    align-items: center;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 nav a:hover {
+    border-radius: 5px;
+
     background-color: rgb(180, 107, 107);
     color: black;
     font-weight: 600;
-    border-radius: 5px;
 }
+
 
 
 
@@ -134,8 +147,9 @@ nav a:hover {
 /*Kode til alt som har med de tre eventkortene å gjøre (i grid):*/
 
 .container {
-    margin: 0 auto;
-    max-width: 1000px;
+    margin-right: 25px;
+    margin-left: 25px;
+    max-width: 100%;
     height: auto;
 
     display: grid;
@@ -294,7 +308,7 @@ input {
     width: 70%;
     padding: 10px;
 
-    border-radius: 2px;
+    border-radius: 4px;
     border: 2px solid #777;
 
     font-size: 1.1em;
@@ -303,20 +317,20 @@ input {
   
   
 .book-knapp button {
-    margin-bottom: 3%;
     padding: 1%;
     width: 30%;
 
-    border-radius: 1000px;
     border: 2px solid rgb(175, 76, 76);
+    border-radius: 1000px;
 
-    font-size: 150%;
     background-color: #e19999;
-    color: white;
-    
 }
 
 .book-knapp a {
+    width: 30%;
+    padding: 3%;
+
+    font-size: 180%;
     font-family: 'Jost', sans-serif;
     text-decoration: none;
     color: white;
@@ -348,6 +362,10 @@ footer {
     background: rgb(236, 234, 234);
 }
 
+iframe{
+    width: 600px;
+    height: 250px;
+}
 
 .footerInfo ul {
     list-style: none;
