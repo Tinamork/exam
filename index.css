@@ -20,13 +20,7 @@ body {
     .Velkommen{
         flex-direction: column-reverse;
     }
-    .VelkommenBilde{
-        margin-top: 50px;
-    }
-    .OmossBilde{
-        margin-top: 50px;
-    }
-    .infoBilder{
+    .VelkommenBilde, .OmossBilde, .infoBilder{
         margin-top: 50px;
     }
     .footer{
@@ -272,7 +266,7 @@ hr {
 
 
 
-/*Kode for alt som befinner seg i footer (Også lik for alle fem sidene): */
+/*Kode for alt som befinner seg i footer (Også lik for alle fire sidene): */
 footer {
     max-width: 100%;
     height: 300px;
