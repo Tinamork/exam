@@ -10,15 +10,7 @@ body {
   margin-top: 150px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-@media screen  and (max-width: 700px){
-  
-}
-  
-=======
-=======
->>>>>>> bde29cb4a24f8245eb9098a9d6d32537856a5548
+
 @media screen and (max-width: 700px) {
   .restaurantnavn, .vårmeny, .grid-containe, .bordreservasjon{
     flex-direction: column;
@@ -41,10 +33,7 @@ body {
     height: 150px;
   }
 }
-<<<<<<< HEAD
->>>>>>> bde29cb4a24f8245eb9098a9d6d32537856a5548
-=======
->>>>>>> bde29cb4a24f8245eb9098a9d6d32537856a5548
+
 
 
 header {
