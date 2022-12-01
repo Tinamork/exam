@@ -153,7 +153,7 @@ header {
 
 .parallax {
     /* Bilde hentet fra: https://www.pexels.com/nb-no/bilde/oppdagelse-verden-astronomi-kule-220201/, bilde tatt av Pexabay */ 
-    background-image: url("verdensrommet.jpeg");
+    background-image: url("Bilder/verdensrommet.jpeg");
     height: 50%;
     
     font-size: 36px;
@@ -257,7 +257,7 @@ a:hover{
 
 .andreparallax{
      /* Bilde hentet fra: https://www.pexels.com/nb-no/bilde/fjell-uskarphet-sfaere-eventyr-346885/, bilde tatt av Doner */ 
-    background-image: url("jordklode.webp");
+    background-image: url("Bilder/jordklode.webp");
     height: 50%;
 
     font-size: 36px;
