@@ -12,6 +12,13 @@ body {
 }
 
 
+
+
+
+
+
+
+
 @media screen and (max-width: 700px){
     body {
         size-adjust: 100%;
@@ -50,91 +57,106 @@ body {
 }
 
 
+
+
+
+
+
+/* Gjorde noen små endringer i navigasjonsbaren slik at den ikke er helt lik som de andre sidene*/
+
+
 header {
     width: 100%;
     height: 15%;
-    background: rgb(174, 85, 85);
-    position: absolute;
     top: 0;
     left: 0;
-  
-    
+
+    position: fixed;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    
+
     background: rgb(174, 85, 85);
-  }
-  
-  .logo {
+    align-items: center;
+    row-gap: 5px;
+}
+
+/*.logo {
     width: 30%;
     height: 100%;
     margin-left: 2%;
-  }
-  
-  .logo img {
+}
+
+.logo img {
     width: 15%;
     height: auto;
-    margin-left: 30%;
-   
-  }
-  
-  .logo a {
-    font-size: 2.8vw;
-    text-decoration: none;
-  
-    width: 100%;
+    margin-left: 8%;
+
+    border: none;
+}
+
+.logo a {
     height: 100%;
-  
+    width: 100%;
+
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    justify-items: flex-start;
+
     align-items: center;
-  }
-  
-  .logo a p {
+    font-size: 2.8vw;
+    text-decoration: none;
+}
+
+.logo a p {
     width: 70%;
     max-height: 100%;
     margin-right: 23%;
-    
-    font-size: 2.5vw;
-    text-align: center;
+
     font-family: 'Marck Script', cursive;
     color: white;
-  }
-  
-  nav {
-    margin-right: 4%;
-    width: 50%;
+    text-align: center;
+}
+*/
+
+nav {
+    /*margin-right: 4%;
+    */
+    width: 80%;
     height: 100%;
-  
+
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-  }
-  
-  nav a {
-    height: 90%;
-    padding: 0 2% 0 2%;
-    display: flex;
-  
-    align-items: center;
+}
+
+nav a {
     text-decoration: none;
     font-size: 1.5vw;
     color: white;
+
+    height: 90%;
+
+    padding: 0 2% 0 2%;
+    display: flex;
+    align-items: center;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-  }
-  
-  nav a:hover {
-    text-decoration: none;
+}
+
+nav a:hover {
+    border-radius: 5px;
+
     background-color: rgb(180, 107, 107);
     color: black;
     font-weight: 600;
-    border-radius: 5px;
-  }
+    text-decoration: none;
+}
   
+
+
+
+
 
 
 
