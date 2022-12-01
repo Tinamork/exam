@@ -138,6 +138,8 @@ header {
 
 
 
+
+
 #overskrift{
     text-align: center;
     font-size: 125%;
@@ -147,99 +149,6 @@ header {
     background-color:white;
     
 }
-
-
-p{
-    font-size: x-large;
-    text-align: left;
-    margin-bottom: 3%;
-    
-    padding: 30px 0;
-    margin-left: 300px;
-    margin-right: 300px;
-}
-
-
-p.important{
-   /* border-style: solid;   for å få en ramme rundt den*/
-    border-width: 3px;
-    border-color: #AE5555;
-    
-}
-
-.førsteavsnitt{
-    color: black;
-    text-align: center;
-    display: flex;
-    
-    margin-bottom:1%;
-    /*margin-left: 300px;
-    margin-right: 300px;*/
-}
-
-#underoverskrift{
-    margin-top: 100px;
-    margin-bottom: 10px;
-    
-}
-
-h3{
-    font-size: 30px;
-    font-family:'Orbitron', sans-serif; 
-    
-    display: block;
-    margin-top: 100px;
-    text-align: center;
-    margin-bottom: 10px;
-    
-}
-
-.innledning h2{
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    margin: 5%;
-}
-
-.innledningsboks{
-    background-color: rgb(220, 220, 220);
-    padding: 3%;
-}
-
-
-.andreavsnitt{
-    text-align: center;
-    /*margin-left: 300px;
-    margin-right: 300px;*/
-    margin-top: 20px;
-    margin-bottom: 100px;
-}
-
-a{
-  text-decoration: none;
-  color: #AE5555;
-}
-
-
-iframe{
-    width: 600px;
-    height: 250px;
-}
-
-.footerinfo ul {
-    list-style: none;
-}
-
-.footerinfo {
-    list-style: none;
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
-
-
 
 
 .parallax {
@@ -261,6 +170,88 @@ a:hover{
     background-size: cover;
   }
 
+.innledning h2{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5%;
+}
+
+.innledningsboks{
+    background-color: rgb(220, 220, 220);
+    padding: 3%;
+}
+
+
+
+
+p{
+    font-size: x-large;
+    text-align: left;
+    margin-bottom: 3%;
+    
+    padding: 30px 0;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+p.important{
+   /* border-style: solid;   for å få en ramme rundt den*/
+    border-width: 3px;
+    border-color: #AE5555;
+}
+
+
+
+
+
+#underoverskrift{
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 30px;
+    font-family:'Orbitron', sans-serif; 
+    
+    display: block;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.førsteavsnitt{
+    color: black;
+    text-align: center;
+    display: flex;
+    
+    margin-bottom:1%;
+    /*margin-left: 300px;
+    margin-right: 300px;*/
+}
+
+/*Første parallax slutter*/
+
+
+
+
+.andreavsnitt, .mellomavsnitt{
+    text-align: center;
+    /*margin-left: 300px;
+    margin-right: 300px;*/
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+
+/*Linkene i teksten*/
+a{
+  text-decoration: none;
+  color: #AE5555;
+}
+a:hover{
+    text-decoration: underline;
+}
 
 
 
@@ -277,34 +268,25 @@ a:hover{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover; 
 }
+
+/*Andre parallax slutter*/
+
+
 
 .sisteavsnitt{
     text-align: center;
 }
 
-.bilder{
-
-    display: flex;
-    width: 30%;
-    
-}
 
 
 .grid-container {
-   /* display: grid;
-    grid-template-rows: auto;
-    padding: 10px;
-    */
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 5%;
-   
 }
-
 
 .bilder1{
     width: 80%;
