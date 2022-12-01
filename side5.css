@@ -36,7 +36,7 @@ body {
       
 }
 
-<<<<<<< Updated upstream
+
 @media screen and (max-width:700px) {
 
     .footer{
@@ -48,10 +48,7 @@ body {
         height: 150px;
     }
 }
-=======
 
-
->>>>>>> Stashed changes
 
 header {
     width: 100%;
@@ -208,7 +205,7 @@ a{
   text-decoration: none;
   color: #AE5555;
 }
-<<<<<<< Updated upstream
+
 
 iframe{
     width: 600px;
@@ -221,7 +218,8 @@ iframe{
 
 .footerinfo {
     list-style: none;
-=======
+}
+
 a:hover{
     text-decoration: underline;
 }
@@ -274,7 +272,7 @@ a:hover{
 }
 
 .bilder{
->>>>>>> Stashed changes
+
     display: flex;
     width: 30%;
     
