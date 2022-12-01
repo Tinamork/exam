@@ -16,7 +16,14 @@ body {
     .brukervennlighet {
         flex-direction: column;
     }
-    
+    .footer{
+        height:200px;
+        font-size: x-small;
+    }
+    .footer iframe{
+        width: 200px;
+        height: 150px;
+    }
 }
 
 header {
@@ -163,6 +170,10 @@ footer {
     font-size: 1.2em;
 }
 
+iframe{
+    width: 600px;
+    height: 250px;
+}
 
 .footerinfo ul {
     list-style: none;
