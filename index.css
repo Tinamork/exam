@@ -112,6 +112,8 @@ nav a:hover {
 }
 
 
+
+
 /*Kode til alt innholdet av(bilde, tekst og display) Velkomst informasjon til nettsiden*/
 .Velkommen {
     display: flex;
@@ -171,6 +173,8 @@ nav a:hover {
 
 
 
+
+
 /*Kode til all layout av Om oss delen av siden*/
 .Omoss {
     display: flex;
@@ -203,6 +207,8 @@ nav a:hover {
 hr {
     border: 2px solid rgb(174, 85, 85);
 }
+
+
 
 
 /*Kode for innhold av enda mer relevant info om vår restaurant/catering*/
