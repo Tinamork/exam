@@ -8,12 +8,10 @@
 }
 
 body {
-    margin-top: 150px;
+    margin-top: 0;
 
     font-family: 'Jost', sans-serif;
     text-align: center;
-
-   
 }
 
 
@@ -142,7 +140,9 @@ nav a:hover {
 
 
 /* Kode for tittel, undertittel og all tekst og bilder på siden*/
-
+main {
+    padding: 10%;
+}
 
 h1 {
     margin-top: 5%;
@@ -216,8 +216,6 @@ span:hover {
     align-items: center;
     max-width: 90%;
     padding: 2%;
-    /*margin: 5%;
-    */
 }
 
 
