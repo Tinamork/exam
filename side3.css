@@ -31,10 +31,6 @@ body {
     margin-top: 50px;
   }
     
-  .grid-container {
-    border: 2px solid rgb(174, 85, 85);
-  }
-  
 
    .vårmeny {
     flex-direction: column-reverse;
