@@ -32,13 +32,17 @@ body {
     body img{
        width: 100%; 
     }
-    .førsteavsnitt, .andreavsnitt, .sisteavsnitt, .innledning, .mellomavsnitt{
+    
+    .førsteavsnitt, .andreavsnitt, .tredjeavsnitt, .sisteavsnitt{
         margin-left: 20px;
         margin-right: 20px;
     }
+    
     .h1 {
         font-size: small;
-
+    }
+    .h2 {
+        font-size: x-small;
     }
       
 }
@@ -63,8 +67,6 @@ body {
 
 
 /* Gjorde noen små endringer i navigasjonsbaren slik at den ikke er helt lik som de andre sidene*/
-
-
 header {
     width: 100%;
     height: 15%;
@@ -82,6 +84,8 @@ header {
     row-gap: 5px;
 }
 
+
+/*Nedenfor er er header fra de andre sidene kommentert ut, da vi valgte å gjøre denne visuelt annerledes*/
 /*.logo {
     width: 30%;
     height: 100%;
@@ -123,10 +127,9 @@ header {
 
 
 
-/* Her er header. Den er blitt gjort litt annerledes i forhold til de andre sidene, da topical ikke trengte å være helt lik på det visuelle*/
+/* Her er ny header. */
 nav {
-    /*margin-right: 4%;
-    */
+    
     width: 80%;
     height: 100%;
 
@@ -199,7 +202,7 @@ nav a:hover {
     margin: 5%;
 }
 
-/* En tillegsboks hvor man kan komme til relevant informasjon*/
+/* En tillegsboks hvor det er link til relevant informasjon*/
 .innledningsboks{
     background-color: rgb(220, 220, 220);
     padding: 3%;
@@ -219,7 +222,7 @@ p{
     margin-right: 300px;
 }
 
-/*Design til linkene i paragraps*/
+/*Design til linkene i paragraphs*/
 a{
   text-decoration: none;
   color: #AE5555;
@@ -280,7 +283,7 @@ Deretter starter andre parallax*/
     margin: 5%;
 }
 
-/*Stylingen av de tre bildene i grid-container, lagde border radius for å få runde kanter*/
+/*Stylingen av de tre bildene i grid-container, lagde border radius for å få rund form på bildene*/
 .bilder1{
     width: 80%;
     border-radius: 50px;
