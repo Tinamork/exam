@@ -1,6 +1,4 @@
-
 /*Noe kode som vi brukte på hver av sidene, dette ønsket vi skulle være likt utgangspunkt for alle*/
-
 * {
     margin: 0;
     padding: 0;
@@ -17,13 +15,19 @@ body {
 
 
 
-/*Forsøk gjort på å bedre tilpasse innholdet ulike skjermstørrelser*/
+/*Endringer i noen css for å tilpasse innholdet best mulig til de fleste telefonskjerm*/
 
 @media screen and (max-width: 700px) {
-    .intro .container .infodel {
+
+     .container, .infodel{
         flex-direction: column;
-        padding: 4%;
+        flex-direction: column-reverse;
     }
+
+    .bordbilde{
+        margin-top: 30px;
+    }
+    
     .footer{
         height:200px;
         font-size: x-small;
@@ -70,11 +74,9 @@ header {
 .logo a {
     height: 100%;
     width: 100%;
-
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
     align-items: center;
     font-size: 2.8vw;
     text-decoration: none;
@@ -84,7 +86,6 @@ header {
     width: 70%;
     max-height: 100%;
     margin-right: 23%;
-
     font-family: 'Marck Script', cursive;
     color: white;
     text-align: center;
@@ -94,7 +95,6 @@ nav {
     margin-right: 4%;
     width: 50%;
     height: 100%;
-
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -104,9 +104,7 @@ nav a {
     text-decoration: none;
     font-size: 1.5vw;
     color: white;
-
     height: 90%;
-
     padding: 0 2% 0 2%;
     display: flex;
     align-items: center;
@@ -115,7 +113,6 @@ nav a {
 
 nav a:hover {
     border-radius: 5px;
-
     background-color: rgb(180, 107, 107);
     color: black;
     font-weight: 600;
@@ -129,15 +126,18 @@ nav a:hover {
 /*Kode til hovedoverskrift og tekst under:*/
 
 .intro {
-    margin-top: 12%;
-    margin-bottom: 5%;
-
+    margin: 50px;
     text-align: center;
-    font-size: 150%;
 }
 
 .intro h1{
+    font-size: 50px;
     color: rgb(175, 76, 76);
+    margin: 1%;
+}
+
+.intro p{
+    font-size: 25px;
 }
 
 
@@ -147,13 +147,10 @@ nav a:hover {
 /*Kode til alt som har med de tre eventkortene å gjøre (i grid):*/
 
 .container {
-    margin-right: 25px;
-    margin-left: 25px;
-    max-width: 100%;
-    height: auto;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    margin-right: 90px;
+    margin-left: 90px;
+    margin-bottom: 90px;
     gap: 20px;
 }
 
@@ -163,8 +160,8 @@ nav a:hover {
 
 .eventtype {
     display: flex;
+    flex: 33%;
     flex-direction: column;
-    justify-content: flex-start;
 
     border: solid 1px black;
     border-color: rgb(208, 117, 117);
@@ -177,16 +174,10 @@ nav a:hover {
 
 .eventbilde {
     width: 100%;
-    display: block;
 }
 
 .eventInnhold {
     padding: 15px;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
     font-size: 1.2em;
     background: #fafafa;
     text-align: left;
@@ -200,7 +191,15 @@ nav a:hover {
 
     background-color: #e19999;
     font-size: 1em;
+    font-weight: bold;
     border-bottom: 2px solid rgba(217, 103, 103, 0.7);
+}
+
+
+
+
+hr {
+    border: 2px solid rgb(174, 85, 85);
 }
 
 
@@ -209,33 +208,57 @@ nav a:hover {
 /*Kode for informasjonsavsnitt og henvisning til restaurantmeny (knapp): */
 
 .infodel {
-    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.flex-item1 {
+    flex: 30%;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.flex-item2 {
+    flex: 70%;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.bordbilde{
+    width: 100%;
+    border-style: solid;
+    border-color: rgb(174, 85, 85);
+    padding: 3%;
+}
+
+.infodel p{
+    font-size: 20px;
+    text-align: center ;
+    line-height: 1.5;
 }
 
 .infodel h2{
     color: rgb(175, 76, 76);
+    text-align: center;
+    font-size: 35px;
+    margin: 2%;
+
 }
 
-.seMenyenVår {
-    margin-top: 50px;
-    margin-bottom: 50px;
-
-    font-size: 140%;
-}
-
-.seMenyenVår button{
-    margin-top: 2%;
-    padding: 1%;
+.flex-item2 button{
+    margin: 2%;
+    padding: 2%;
+    width: 70%;
 
     border: 2px solid rgb(175, 76, 76);
     border-radius: 1000px;
-
     background-color: #df7d7d;
 }
 
-.seMenyenVår a{
+.flex-item2 a{
     padding: 3px;
-
     text-decoration: none;
     color: white;
     font-family: 'Jost', sans-serif;
@@ -243,35 +266,15 @@ nav a:hover {
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-.seMenyenVår a:hover{
+.flex-item2 a:hover{
     text-decoration: none;
     color: black;
 }
 
-.seMenyenVår a::after {
+.flex-item2 a::after {
     text-decoration: none;
     color: rgb(84, 75, 75);
 }
-
-.feirHosOss {
-    margin-top: 3%;
-    margin-bottom: 8%;
-
-    font-size: 140%;
-}
-
-.bordbilde {
-    width: 30%;
-    margin-top: 1%;
-    padding: 1%;
-    margin-left: 1%;
-
-    float: left;
-   
-    border-style: solid;
-    border-color: rgb(175, 76, 76);
-}
-
 
 
 
@@ -280,27 +283,30 @@ nav a:hover {
 
 .bookOnline {
     padding: 2%;
+    margin: 50px;
+    font-size: 20px;
+}
 
-    font-size: 120%;
+.bookOnline h3{
+    color: rgb(175, 76, 76);
+    font-size: 35px;
 }
 
 .input-element {
     margin: 20px 0;
+    font-weight: bold;
 }
   
 .input-element.inlined {
     width: 49%;
     margin-left: 3%;
     margin-right: 3%;
-
     display: inline-block;
 }
 
 label {
     padding-bottom: 10px;
-
     display: block;
-    
     font-size: 1.1em;
 }
 
@@ -309,8 +315,7 @@ input {
     padding: 10px;
 
     border-radius: 4px;
-    border: 2px solid #777;
-
+    border: 2px solid rgb(174, 85, 85);
     font-size: 1.1em;
 }
 
@@ -318,16 +323,15 @@ input {
   
 .book-knapp button {
     padding: 1%;
-    width: 30%;
+    width: 50%;
 
     border: 2px solid rgb(175, 76, 76);
     border-radius: 1000px;
-
-    background-color: #e68080;
+    background-color: #df7d7d;
 }
 
 .book-knapp a {
-    width: 30%;
+    width: 50%;
     padding: 3%;
 
     font-size: 180%;
@@ -341,13 +345,16 @@ input {
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
+.book-knapp a::after {
+    text-decoration: none;
+    color: rgb(84, 75, 75);
+}
 
 
 
 
 
-
-/*Kode for alt som befinner seg i footer (Også lik for alle fem sidene): */
+/*Kode for alt som befinner seg i footer (Også lik for alle fire sidene): */
 
 footer {
     width: 100%;
