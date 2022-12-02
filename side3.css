@@ -1,3 +1,4 @@
+/*Noe kode som vi brukte på hver av sidene, dette ønsket vi skulle være likt utgangspunkt for alle*/
 
 * {
   margin: 0;
@@ -8,9 +9,11 @@ body {
   font-family: 'Jost', sans-serif;
   text-align: center;
   margin-top: 150px;
+  /*Margin top her for at ikke det øverste på siden skulle falle under navigasjonsbaren (som hendte hvis denne ikke ble inkludert)*/
+
 }
 
-
+/*Forsøk gjort på å bedre tilpasse innholdet ulike skjermstørrelser*/
 @media screen and (max-width: 700px) {
   .header {
     max-width: 100%;
@@ -57,6 +60,7 @@ body {
 }
 
 
+/*Koden som tilhører navigasjonsbaren (denne er lik for alle fem sidene):*/
 
 header {
   width: 100%;
@@ -135,35 +139,29 @@ nav a:hover {
   font-weight: 600;
   border-radius: 5px;
 }
-
-
 /*NAVIGATION BAR^^ */
 
-
+/*Kode for å style innledningen*/
 .restaurantnavn {
   display: flex;
-  justify-content: center;
-  justify-items: center;
   align-items: center;
   margin-bottom: 80px;
-
-  /*
+}
+.restaurantnavn h1 {
   text-align: center;
-  font-size: 200%;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  display: flex;
-  margin-left: 10px;
-  */
+  font-size: 65px;
+  color: rgb(175, 76, 76);
 }
 
+/*Bruker flex for å enkelt kunne vise elementene side ved side på pc, men under hverandre på mindre skjermer*/
 .flex-item-left, .flex-item-right{
   flex: 50%;
   margin-left: 70px;
   margin-right: 70px;
-
   font-size: 150%;
 }
+
+/*Styling av første bilde*/
 .vinyardBilde{
   width: 100%;
   border-style: solid;
@@ -171,40 +169,20 @@ nav a:hover {
   padding: 3%;
 }
 
-/*
-.restaurantnavn > .left-side {
-  font-size: large;
-  margin-top: 0px;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-.restaurantnavn > .right-side > img {
-  width: 1000px;
-  height: 700px;
-  margin-right: 20px;
-}
-*/
-.restaurantnavn h1 {
-  text-align: center;
-  font-size: 65px;
-  color: rgb(175, 76, 76);
-  
-}
-
+/*Styling av p-elementer i innledningen*/
 .restaurantnavn p {
   margin-top: 25px;
   line-height: 2.0;
 }
 
-
-
+/*Styling av <hr> for å marker starten på menyen*/
 hr {
   border: 2px solid rgb(174, 85, 85);
   margin-left: 20px;
   margin-right: 20px;
 }
 
+/*Styling av overskriften "Vår meny"*/
 #vårmeny {
   font-size: 200%;
   margin-top: 10px;
@@ -213,6 +191,7 @@ hr {
   font-family: 'Jost', sans-serif;
 }
 
+/*Kode for å lage et grid-system hvor bildene og menyen kan ligge side ved side*/
 .grid-container {
   display: grid;
   grid-template-columns: 40% 60%;
@@ -225,64 +204,44 @@ hr {
   font-size: 20px;
 }
 
-#matlaging {
+/*Kode for formateringen av bildene som går langs menyen*/
+#matlaging, #pizza, #gelato, #dekketbord {
   display: flex;
   width: 90%;
 }
 
-#pizza {
-  display: flex;
-  width: 90%;
-}
-
-#gelato {
-  display: flex;
-  width: 90%;
-}
-
-#dekketbord {
-  display: flex;
-  width: 90%;
-}
-
+/*Kode for få ønsket linjeavstand, styling og størrelse på diverse tekst i menyen*/
 .menyen {
   line-height: 350%;
 }
-
 .menyen ul li {
   list-style: georgian;
 }
-
 .menyen h3 {
   font-size: 5vw;
 }
-
 .menyen h4 {
   display:block;
   font-size: 4vw;
   margin: 30px;
   font-weight: bold;
 }
-
-
 .allergener{
   display: block;
   color: rgb(174, 85, 85);
   font-weight: bold;
 }
 
-.forrett {
+/*Lager avstand mellom de ulike delene i menyen*/
+.forrett, .hovedretter {
   margin-bottom: 100px;
 }
-
-.hovedretter {
-  margin-bottom: 100px;
-}
-
 .desserter {
   margin-bottom: 50px;
 }
 
+/*Bruker flex for å kunne sidestille bordreservasjondelen når den åpnes på en pc, 
+men vises i column-format på mindre skjermer*/
 .nederstedel {
   display: flex;
   align-items: center;
@@ -290,6 +249,7 @@ hr {
   margin-bottom: 5%;
 }
 
+/*Diverse styling av de ulike delene av bordreservasjon-elementet*/
 .bordreservasjon {
   font-family: 'Jost', sans-serif;
   font-size: x-large;
@@ -301,7 +261,6 @@ hr {
   flex: 50%;
   height: 620px;
 }
-
 .bordreservasjon div {
   display: inline-block;
   text-align: start left;
@@ -314,23 +273,22 @@ hr {
 .bordreservasjon div select {
   border: 3px solid rgb(175, 76, 76);
 }
-
 #submit {
   text-align: center;
   width: 100%;
 }
-
 #submit input {
   width: 200px;
 }
 
+/*Kode for styling av bildet tilhørende bordreservasjon*/
 #bildeBordreservasjon {
   width: 100%;
   box-shadow: 3px 3px rgba(217,103,103,0.7);
 }
 
 
-
+/*Kode for alt som befinner seg i footer (Også lik for alle fem sidene): */
 footer {
   width: 100%;
   height: 300px;
