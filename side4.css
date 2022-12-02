@@ -191,7 +191,7 @@ span {
 
     font-size: 1.4em;
 
-    position: relative;
+    position: static;
 
     transform: translate(-50%,-50%);
     background-image: linear-gradient(90deg, rgba(242,201,201,1) 51%, rgba(224,130,130,1) 100%);
@@ -206,6 +206,16 @@ span:hover {
     background-size: 100% 100%;
     background-position: 0% 100%;
     transition: background-position .7s, background-size .5s ease-in-out;
+}
+
+
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    margin: 5%;
 }
 
 
