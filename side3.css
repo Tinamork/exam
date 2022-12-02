@@ -165,6 +165,8 @@ nav a:hover {
   flex: 50%;
   margin-left: 70px;
   margin-right: 70px;
+
+  font-size: 150%;
 }
 .vinyardBilde{
   width: 100%;
