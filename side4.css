@@ -1,4 +1,7 @@
 
+
+/* Kode som gjelder for hele siden, det vi tenkte var nødvendig og kunne gjelde for alt innhold på hele siden*/
+
 * {
     margin: 0;
     padding: 0;
@@ -9,8 +12,14 @@ body {
 
     font-family: 'Jost', sans-serif;
     text-align: center;
+
+   
 }
 
+
+
+
+/* Kode for å tilpasse siden ulike skjermstørrelser gjennnom media query*/
 
 @media screen and (max-width: 700px) {
     .brukervennlighet {
@@ -35,6 +44,14 @@ body {
         height: 150px;
     }
 }
+
+
+
+
+
+
+
+/*Koden under er for navigasjonsbare, denne koden er så og si lik for hver side*/
 
 header {
     width: 100%;
@@ -124,6 +141,9 @@ nav a:hover {
 
 
 
+/* Kode for tittel, undertittel og all tekst og bilder på siden*/
+
+
 h1 {
     margin-top: 5%;
     margin-bottom: 2%;
@@ -132,6 +152,7 @@ h1 {
     color: rgb(175, 76, 76);
 }
 
+
 .undertittel {
     margin-bottom: 3%;
 
@@ -139,16 +160,8 @@ h1 {
 }
 
 .brukervennlighet {
-    margin-bottom: 3%;
+    margin-bottom: 2%;
     padding: 1%;
-
-    /*
-    display: flex;
-    flex-direction: column;
-    
-    align-items: center;
-    justify-content: space-evenly;
-    */
 
     font-size: 180%;
 }
@@ -171,6 +184,35 @@ img {
 
 
 
+/*Tekstanimasjon for moroskyld*/
+
+span {
+    padding: 1%;
+
+    font-size: 1.4em;
+
+    position: relative;
+
+    transform: translate(-50%,-50%);
+    background-image: linear-gradient(90deg, rgba(242,201,201,1) 51%, rgba(224,130,130,1) 100%);
+    background-size: 100% 10px;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    transition: background-size .7s, background-position .5s ease-in-out;
+    border-radius: 700px;
+}
+
+span:hover {
+    background-size: 100% 100%;
+    background-position: 0% 100%;
+    transition: background-position .7s, background-size .5s ease-in-out;
+}
+
+
+
+
+
+/* Koden til alt som er i footer (denne er like for alle sidene)*/
 
 footer {
     width: 100%;

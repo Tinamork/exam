@@ -12,20 +12,46 @@ body {
 
 
 @media screen and (max-width: 700px) {
-  .restaurantnavn, .vårmeny, .grid-containe, .bordreservasjon{
-    flex-direction: column;
+  .header {
     max-width: 100%;
   }
-
-  .restaurantnavn, .vårmeny {
-    flex-direction: column-reverse;
+  
+  .restaurantnavn, .vårmeny, .grid-container, .bordreservasjon{
+    flex-direction: column;
+    max-width: fit-content;
+    text-align: center;
   }
-  img {
+  #bilder {
     max-width: 100%;
     height: auto;
+    margin: 0 auto;
+    text-align: center;
   }
+  .vinyardBilde{
+    margin-top: 50px;
+  }
+    
+  .grid-container {
+    border: 2px solid rgb(174, 85, 85);
+  }
+  
+
+   .vårmeny {
+    flex-direction: column-reverse;
+  }
+
+  .bildevenstre {
+    background-image: linear-gradient(white, rgb(174, 85, 85));
+
+  }
+
+  .nederstedel {
+    flex-direction: column;
+  }
+
   .footer{
     height:200px;
+    max-width: 100%;
     font-size: x-small;
   }
   .footer iframe{
@@ -90,7 +116,6 @@ nav {
   margin-right: 4%;
   width: 50%;
   height: 100%;
-
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -120,14 +145,35 @@ nav a:hover {
 
 
 .restaurantnavn {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 80px;
+
+  /*
   text-align: center;
   font-size: 200%;
   background-repeat: no-repeat;
   background-size: 100%;
   display: flex;
   margin-left: 10px;
+  */
 }
 
+.flex-item-left, .flex-item-right{
+  flex: 50%;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.vinyardBilde{
+  width: 100%;
+  border-style: solid;
+  border-color: rgb(174, 85, 85);
+  padding: 3%;
+}
+
+/*
 .restaurantnavn > .left-side {
   font-size: large;
   margin-top: 0px;
@@ -140,17 +186,17 @@ nav a:hover {
   height: 700px;
   margin-right: 20px;
 }
-
+*/
 .restaurantnavn h1 {
-  text-align: start;
-  font-size: 200%;
-  color: black;
+  text-align: center;
+  font-size: 65px;
+  color: rgb(175, 76, 76);
   
 }
 
 .restaurantnavn p {
-  margin-top: 20px;
-  line-height: 45px;
+  margin-top: 25px;
+  line-height: 2.0;
 }
 
 
@@ -172,7 +218,6 @@ hr {
 .grid-container {
   display: grid;
   grid-template-columns: 40% 60%;
-  margin-left: 20px;
   grid-gap: 10px;
   padding: 10px;
 }
@@ -202,20 +247,21 @@ hr {
   width: 90%;
 }
 
-
-
+.menyen {
+  line-height: 350%;
+}
 
 .menyen ul li {
   list-style: georgian;
 }
 
 .menyen h3 {
-  font-size: 200%;
+  font-size: 5vw;
 }
 
 .menyen h4 {
   display:block;
-  font-size: 150%;
+  font-size: 4vw;
   margin: 30px;
   font-weight: bold;
 }
@@ -223,7 +269,7 @@ hr {
 
 .allergener{
   display: block;
-  color: rgb(94, 57, 12);
+  color: rgb(174, 85, 85);
   font-weight: bold;
 }
 
@@ -239,14 +285,25 @@ hr {
   margin-bottom: 50px;
 }
 
-.bordreservasjon {
-  display: inline-block;
-  font-family: 'Jost', sans-serif;
-  width: 300px;
-  margin-top: 10%;
-  border: 3px solid rgb(175, 76, 76);
-  padding: 10%;
+.nederstedel {
+  display: flex;
+  align-items: center;
+  height: auto;
+  margin-bottom: 5%;
 }
+
+.bordreservasjon {
+  font-family: 'Jost', sans-serif;
+  font-size: x-large;
+  border: 3px solid rgb(175, 76, 76);
+  box-shadow: 3px 3px rgba(217,103,103,0.7);
+  padding: 5%;
+  background-color: #e19999;
+  text-align: left;
+  flex: 50%;
+  height: 620px;
+}
+
 .bordreservasjon div {
   display: inline-block;
   text-align: start left;
@@ -254,10 +311,10 @@ hr {
 }
 .bordreservasjon div input {
   font-family: 'Jost', sans-serif;
-  border: 1px solid rgb(175, 76, 76);
+  border: 2px solid rgb(175, 76, 76);
 }
 .bordreservasjon div select {
-  border: 2px solid rgb(175, 76, 76);
+  border: 3px solid rgb(175, 76, 76);
 }
 
 #submit {
@@ -267,6 +324,11 @@ hr {
 
 #submit input {
   width: 200px;
+}
+
+#bildeBordreservasjon {
+  width: 100%;
+  box-shadow: 3px 3px rgba(217,103,103,0.7);
 }
 
 
