@@ -214,8 +214,10 @@ span:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 100%;
-    margin: 5%;
+    max-width: 90%;
+    padding: 2%;
+    /*margin: 5%;
+    */
 }
 
 
