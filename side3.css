@@ -141,6 +141,11 @@ nav a:hover {
 }
 /*NAVIGATION BAR^^ */
 
+
+
+
+
+
 /*Kode for å style innledningen*/
 .restaurantnavn {
   display: flex;
@@ -153,6 +158,11 @@ nav a:hover {
   color: rgb(175, 76, 76);
 }
 
+
+
+
+
+
 /*Bruker flex for å enkelt kunne vise elementene side ved side på pc, men under hverandre på mindre skjermer*/
 .flex-item-left, .flex-item-right{
   flex: 50%;
@@ -160,6 +170,11 @@ nav a:hover {
   margin-right: 70px;
   font-size: 150%;
 }
+
+
+
+
+
 
 /*Styling av første bilde*/
 .vinyardBilde{
@@ -169,11 +184,13 @@ nav a:hover {
   padding: 3%;
 }
 
+
 /*Styling av p-elementer i innledningen*/
 .restaurantnavn p {
   margin-top: 25px;
   line-height: 2.0;
 }
+
 
 /*Styling av <hr> for å marker starten på menyen*/
 hr {
@@ -181,6 +198,7 @@ hr {
   margin-left: 20px;
   margin-right: 20px;
 }
+
 
 /*Styling av overskriften "Vår meny"*/
 #vårmeny {
@@ -191,6 +209,7 @@ hr {
   font-family: 'Jost', sans-serif;
 }
 
+
 /*Kode for å lage et grid-system hvor bildene og menyen kan ligge side ved side*/
 .grid-container {
   display: grid;
@@ -198,17 +217,21 @@ hr {
   grid-gap: 10px;
   padding: 10px;
 }
+
+
 .grid-container > div {
   text-align: center;
   padding: 20px 0;
   font-size: 20px;
 }
 
+
 /*Kode for formateringen av bildene som går langs menyen*/
 #matlaging, #pizza, #gelato, #dekketbord {
   display: flex;
   width: 90%;
 }
+
 
 /*Kode for få ønsket linjeavstand, styling og størrelse på diverse tekst i menyen*/
 .menyen {
@@ -232,6 +255,8 @@ hr {
   font-weight: bold;
 }
 
+
+
 /*Lager avstand mellom de ulike delene i menyen*/
 .forrett, .hovedretter {
   margin-bottom: 100px;
@@ -239,6 +264,8 @@ hr {
 .desserter {
   margin-bottom: 50px;
 }
+
+
 
 /*Bruker flex for å kunne sidestille bordreservasjondelen når den åpnes på en pc, 
 men vises i column-format på mindre skjermer*/
@@ -248,6 +275,8 @@ men vises i column-format på mindre skjermer*/
   height: auto;
   margin-bottom: 5%;
 }
+
+
 
 /*Diverse styling av de ulike delene av bordreservasjon-elementet*/
 .bordreservasjon {
@@ -281,11 +310,16 @@ men vises i column-format på mindre skjermer*/
   width: 200px;
 }
 
+
+
+
 /*Kode for styling av bildet tilhørende bordreservasjon*/
 #bildeBordreservasjon {
   width: 100%;
   box-shadow: 3px 3px rgba(217,103,103,0.7);
 }
+
+
 
 
 /*Kode for alt som befinner seg i footer (Også lik for alle fem sidene): */
