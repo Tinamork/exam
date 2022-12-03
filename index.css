@@ -133,11 +133,11 @@ nav a:hover {
 }
 .Velkommen h1{
     color:rgb(175, 76, 76);
-    font-size: 65px
+    font-size: 60px
 }
 .Velkommen h2{
     color:rgb(175, 76, 76);
-    font-size: 35px;
+    font-size: 30px;
 }
 .flex-item-left, .flex-item-right{
     flex: 50%;
@@ -160,6 +160,7 @@ nav a:hover {
     color: white;
     font-family: 'Jost', sans-serif;
     font-size: 25px;
+    font-weight: bold;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 .booking a:hover {
@@ -167,7 +168,7 @@ nav a:hover {
     color: black;
     background-color: rgb(174, 85, 85);
     border-radius: 5px;
-    font-weight: 600;
+    font-weight: bold;
     padding: 25px;
 }
 
@@ -188,8 +189,8 @@ nav a:hover {
     margin-right: 70px;
 }
 .Omoss p {
-    font-size: 18px;
-    padding-top: 3%;
+    font-size: 20px;
+    line-height: 1.5;
 }
 .Omoss h2{
     color:rgb(175, 76, 76);
@@ -235,9 +236,9 @@ hr {
     padding: 3%;
 }
 .info p  {
-    font-size: 18px;
+    font-size: 20px;
     text-align: left;
-    padding-bottom: 3%;
+    line-height: 1.5;
 }
 .info h3  {
     text-align: left;
@@ -245,13 +246,14 @@ hr {
     font-size: 25px;
     font-weight: bold;
     padding-bottom: 1%;
+    padding-top: 5%;
 }
 .info h4 {
     text-align: left;
     color:rgb(175, 76, 76);
     font-size: 20px;
     padding-bottom: 1%;
-    padding-top: 1%;
+    padding-top: 3%;
 }
 .info a:link {
     color:rgb(175, 76, 76)
