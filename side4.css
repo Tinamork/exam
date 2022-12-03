@@ -1,38 +1,26 @@
 
-
-/* Kode som gjelder for hele siden, det vi tenkte var nødvendig og kunne gjelde for alt innhold på hele siden*/
-
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    margin-top: 0;
+    /*Margin top her for at ikke det øverste på siden skulle falle under navigasjonsbaren (som hendte uansett hvis ikke)*/
+    margin-top: 150px;
 
     font-family: 'Jost', sans-serif;
     text-align: center;
 }
 
-
-
-
-/* Kode for å tilpasse siden ulike skjermstørrelser gjennnom media query*/
-
+/*Endringer i noen CSS for å tilpasse innholdet best mulig for fleste telefonskjerm */
 @media screen and (max-width: 700px) {
-    .brukervennlighet {
+    .Brukervennlighet, .endringer{
         flex-direction: column;
-        padding: 4%;
     }
-
-    h1 {
-        padding: 1%;
+    .BrukervennlighetBilder, .bilderEndringer{
+        margin-top: 50px;
     }
-
-    img {
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
+    
     .footer{
         height:200px;
         font-size: x-small;
@@ -41,29 +29,23 @@ body {
         width: 200px;
         height: 150px;
     }
+    
 }
 
 
 
-
-
-
-
-/*Koden under er for navigasjonsbare, denne koden er så og si lik for hver side*/
-
+/*Koden som tilhører navigasjonsbaren (denne er lik for alle fem sidene):*/
 header {
     width: 100%;
     height: 15%;
+    background: rgb(174, 85, 85);
+    position: fixed;
     top: 0;
     left: 0;
-
-    position: fixed;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-
-    background: rgb(174, 85, 85);
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -76,31 +58,27 @@ header {
     width: 15%;
     height: auto;
     margin-left: 8%;
-
-    border: none;
 }
 
 .logo a {
     height: 100%;
     width: 100%;
+    text-decoration: none;
 
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
     align-items: center;
     font-size: 2.8vw;
-    text-decoration: none;
 }
 
 .logo a p {
-    width: 70%;
-    max-height: 100%;
-    margin-right: 23%;
-
     font-family: 'Marck Script', cursive;
     color: white;
+    width: 70%;
+    max-height: 100%;
     text-align: center;
+    margin-right: 23%;
 }
 
 nav {
@@ -117,9 +95,7 @@ nav a {
     text-decoration: none;
     font-size: 1.5vw;
     color: white;
-
     height: 90%;
-
     padding: 0 2% 0 2%;
     display: flex;
     align-items: center;
@@ -127,70 +103,62 @@ nav a {
 }
 
 nav a:hover {
-    border-radius: 5px;
-
     background-color: rgb(180, 107, 107);
     color: black;
     font-weight: 600;
+    border-radius: 5px;
 }
 
 
 
 
-
-
-/* Kode for tittel, undertittel og all tekst og bilder på siden*/
-main {
-    padding: 10%;
+/*Kode til alt innholdet av bilder og tekst som handler om brukervennlighet*/
+.Brukervennlighet {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-h1 {
-    margin-top: 5%;
-    margin-bottom: 2%;
-
-    font-size: 340%;
-    color: rgb(175, 76, 76);
+.BrukervennlighetBilder{
+    width: 100%;
+    border-style: solid;
+    border-color: rgb(174, 85, 85);
+    padding: 3%;
 }
 
-
-.undertittel {
-    margin-bottom: 3%;
-
-    font-size: 200%;
+.Brukervennlighet p {
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.8;
 }
 
-.brukervennlighet {
-    margin-bottom: 2%;
-    padding: 1%;
-
-    font-size: 180%;
+.Brukervennlighet h1{
+    color:rgb(175, 76, 76);
+    font-size: 45px
+}
+.Brukervennlighet h2{
+    font-size: 22px;
+    padding: 2%;
 }
 
-img {
-    margin-left: 2px;
-    margin-right: 2px;
-    width: 50%;
-    height: 100%;
-    padding: 1%;
-
-    border: 2px solid rgb(175, 76, 76);
+.flex-item-left{
+    flex: 60%;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-.brukervennlighet p {
-    padding: 1%;
+.flex-item-right{
+    flex: 40%;
+    margin-left: 50px;
+    margin-right: 50px;
 }
-
-
-
-
-
-/*Tekstanimasjon for moroskyld*/
 
 span {
     padding: 1%;
-
     font-size: 1.4em;
-
     position: static;
 
     transform: translate(-50%,-50%);
@@ -210,44 +178,77 @@ span:hover {
 
 
 
-.grid-container {
+/* Kode til hr */
+hr {
+    border: 2px solid rgb(174, 85, 85);
+}
+
+
+
+/* Kode til alt innhold av bilder og tekst som handler om Automated test*/
+.automatedTest{
+    margin: 50px;
+}
+
+.automatedTest h2{
+    color:rgb(175, 76, 76);
+    font-size: 40px;
+    padding: 1%;
+}
+
+.automatedTest p{
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.endringer{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
     align-items: center;
-    max-width: 90%;
-    padding: 2%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.flex-item1, .flex-item2{
+    flex: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.bilderEndringer{
+    width: 100%;
+    padding: 1%;
+    border-style: solid;
+    border: 2px solid rgb(175, 76, 76);
 }
 
 
 
 
-
-/* Koden til alt som er i footer (denne er like for alle sidene)*/
-
+/*Kode for alt som befinner seg i footer (Også lik for alle fire sidene): */
 footer {
-    width: 100%;
+    max-width: 100%;
     height: 300px;
-
+    background: rgb(236, 234, 234);
     position: static;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
-    background: rgb(236, 234, 234);
     font-size: 1.2em;
+    margin-top: 50px;
 }
-
 iframe{
     width: 600px;
     height: 250px;
 }
-
 .footerinfo ul {
     list-style: none;
 }
-
 .footerinfo {
     list-style: none;
-
     display: flex;
 }
