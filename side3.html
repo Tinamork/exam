@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vår café</title>
+    
+    <title>Vår Meny</title>
 
-    <!--link til fonter-->
+    <!--Link til tilhørende CSS side-->
+    <link rel="stylesheet" href="side3.css">
+
+    <!--link til fonter, alle er hentet fra google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -16,50 +19,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
 
+
+    <!--Årsak for at noen fonter er importert slik som under er at visse fonter ville ikke
+    fungere med mindre man gjorde det på denne måten, mens andre fungerte som de skulle.-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
 
-        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
-
+        
         @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
     </style>
-
-    <link rel="stylesheet" href="side3.css">
-
-    <style>
-        body {
-            font-family: 'Jost', sans-serif;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: 'Jost', sans-serif;
-            letter-spacing: 5px;
-        }
-    </style>
-
-
+    
 </head>
-
 <body>
 
-
+    <!--Alt under header tilhører navigasjonsbaren-->
     <header>
-
         <div class="logo">
-
             <a href="index.html">
-                <img src="Bilder/barn.png" alt="pexels.com, fotograf: DinosoftLabs" class="barnbilde">
+                <img src="Bilder/barn.png" alt="logo av et hus" class="barnbilde">
+                <!--Bildet er hentet fra Pexels.com, fotograf: DinosoftLabs-->
 
-                <!--Bildet er hentet fra Pexels.com. Fotograf: DinosoftLabs-->
-            
                 <p>Hus Italiano</p>
             </a>
-
         </div>
         
         <nav>
@@ -69,22 +51,24 @@
             <a href="side4.html">Brukervennlighet</a>
             <a href="side5.html">Topical</a>
         </nav>
-        
+
     </header>
 
-
-
-    <!-- Menu Section -->
+    <!-- Innledning -->
     <div class="restaurantnavn">
         <div class="flex-item-left">
 
             <h1>Restaurant Italiano</h1>
 
-            <p>Restaurant Italiano ble til med lidenskap i 2021 etter en lang pandemi. Italiano bygger på prinsipp om god atmosfære og herlige smaker. Teamet vårt var på en to år lang reise på tvers av Italia for å finne de beste oppskriftene det vakre landet i sør har å tilby.
+            <p> Restaurant Italiano ble til i 1974 og våre italienske kokker har tatt med seg en del av Italia til spisebordet i Norge. 
+                Menyen under er vår faste restarant meny som kan serveres på deres selskaper.
+                Kokkene våre er svært profesjonelle og gjerne skreddsyr deg en helt egen meny av mat og drikkevarer for din selskap og ingen forespørsel er for stort.
                 
                 <br>
 
-                Vårt mål var å ta våre opplevelser og minner, og dele den med det norske folk. I vår restaurant får du en autentisk og gastronomisk opplevelse som vil glede alle dine sanser. Alle i team Italiano ønsker deg hjertelig velkommen til en smakelig opplevelse du sent vil glemme! 
+                Vårt mål var å ta våre opplevelser og minner, og dele den med det norske folk. 
+                I vår restaurant får du en autentisk og gastronomisk opplevelse som vil glede alle dine sanser. 
+                Alle i team Italiano ønsker deg hjertelig velkommen til en smakelig opplevelse du sent vil glemme! 
             </p>
 
         </div>
@@ -95,297 +79,354 @@
 
         </div>
     </div>
+    
+
+<hr>
 
 
+<!-- Meny: forret, hovedrett og dessert-->
+<div class="Meny">
+        <h1> Vår Meny</h1>
 
+        <h2> Forrett</h2>
 
-    <hr>
+    <div class="matrett">
 
-    <div id="vårmeny">
-        <h2>Vår meny</h2>
-    </div>
+            <div class="flex-item1">
+    
+            
+                <li>
+                    <h4>Foccaia</h4>
 
-    <hr>
+                    <p>Foccacia servert med husets pesto rosso, pesto genovese og aioli</p>
 
+                    <div class="allergener">
+                        <p>Allergener: Bløtdyr, egg, hvete, melk, selleri, og sennep</p>
+                    </div>
 
+                    <div class="pris">
+                    <p>Ordinærpris: 119,- / Studentpris 109,-</p>
+                    </div>
 
+                </li>
+            <br>
+                <li>
+                    <h4>Mandorle con sale</h4>
 
-    <div class="grid-container">
+                    <p>mandler med salt</p>
 
-        
-        <div class="bildevenstre">
+                    <div class="allergener">
+                        <p>Allergener: mandler </p>
+                    </div>
 
-            <img id="matlaging" src="Bilder/matlaging.jpg" alt="">
-                <!--Bildet er hentet fra: https://images.pexels.com/photos/35661/pasta-cheese-egg-food.jpg?cs=srgb&dl=pexels-pixabay-35661.jpg&fm=jpg&_gl=1*9qoxqg*_ga*NzA3OTUxNTYuMTY2NzM4MTY1Mg..*_ga_8JE65Q40S6*MTY2NzM4OTE3My4zLjEuMTY2NzM4OTQwMC4wLjAuMA..-->
+                    <div class="pris">
+                    <p>Ordinærpris: 45,- / Studentpris 30,-</p>
+                    </div>
 
-            <img id="pizza" src="Bilder/pizza.jpg" alt="">
-                <!--Bildet er hentet fra: https://www.pexels.com/nb-no/bilde/se-tradisjonell-skinke-bakt-10875298/-->
-
-            <img id="gelato" src="Bilder/gelato.jpg" alt="">
-                <!--Bildet er hentet fra: https://images.pexels.com/photos/5061196/pexels-photo-5061196.jpeg?cs=srgb&dl=pexels-roman-odintsov-5061196.jpg&fm=jpg&_gl=1*17rq5ym*_ga*NzA3OTUxNTYuMTY2NzM4MTY1Mg..*_ga_8JE65Q40S6*MTY2NzM5MTM2My40LjEuMTY2NzM5MTU0Mi4wLjAuMA..-->
-            <img id="dekketbord" src="Bilder/dekketbord.jpg" alt="">
-            <!--Bildet er hentet fra: pexels.com, fotograf: Jessica Cortez-->
-        </div>
-
-
-        <div class="teksthøyre">
-
-        
-
-
-        <div class="menyen">
-            <strong>
-
-        
-
-            <div class="forrett">
-
-                <h3>Forretter</h3>
-
-                <ul>
-                    <li>
-                        <h4>Foccaia</h4>
-
-                        <p>Foccacia servert med husets pesto rosso, pesto genovese og aioli
-
-                        <div class="allergener">
-                            <i>Allergener: Bløtdyr, egg, hvete, melk, selleri, sennep, svoveldioksid og sulfitt</i>
-                        </div>
-
-                        <b>Ordinærpris: 119,- / Studentpris 109,-</b>
-                        </p>
-
-
-                    </li>
-
-                    <li>
-
-                        <h4>Salumi e parmigiano reggiano</h4>
-
-                        <p>Fjøl med vår beste parmaskinke, fennikelsalami og parmigiano reggiano
-
-                        <div class="allergener">
-                            <i>Allergener: Melk, egg, svoveldioksid, sulfitt</i>
-                        </div>
-
-                        <b>Ordinærpris 99,- / Studentpris 89,-</b>
-
-                        </p>
-
-                    </li>
-                </ul>
-            </div>
+                </li>
 
             
-            <div class="hovedretter">
-
-                <h3>Hovedretter</h3>
-
-                <ul class="hovedretter liste">
-
-                    <li>
-
-                        <h4>Pollo a la Fiorentina</h4>
-
-                        <p>Pannestekt kyllingfilet servert med cherrytomater, fløte og rosmarinstekte poteter
-
-                        <div class="allergener">
-                            <i>Allergener: Melk, svoveldioksid, sulfitt</i>
-                        </div>
-
-                        <b>Ordinærpris 189,- / Studentpris 159,-</b>
-
-                        </p>
-
-                    </li>
-
-                    <li>
-
-                        <h4>Pasta Carbonara</h4>
-
-                        <p>Pasta linguine med guanciale, eggeplommer, fløte, parmesan, nykvernet sort pepper
-
-                        <div class="allergener">
-                            <i>Allergener: Egg, hvete, melk</i>
-                        </div>
-
-                        <b>Ordinærpris 215,- / Studentpris 105,-</b>
-
-                        </p>
-
-                    </li>
-
-                    <li>
-
-                        <h4>Pizza Prosquitto de parma</h4>
-
-                        <p>Pizza med tomat, mozzarella, parmaskinke, pinjekjerner, ruccola, parmesan
-
-                        <div class="allergener">
-                            <i>Allergener: Hvete, melk, pinjekjerner</i>
-                        </div>
-
-                        <i>*Kan lages med glutenfri deig 49,-</i>
-
-                        <b>Ordinærpris 225,- / Studentpris 115,-</b>
-
-                        </p>
-                    </li>
-                </ul>
             </div>
+
+            <div class="flex-item2">
+
+                <li>
+                    <h4>Salumi e parmigiano reggiano</h4>
+
+                    <p>Fjøl med vår beste parmaskinke, fennikelsalami og parmigiano</p>
+
+                    <div class="allergener">
+                        <p>Allergener: Melk, og egg</p>
+                    </div>
+
+                    <div class="pris">
+                    <p> Ordinærpris 99,- / Studentpris 89,- </p>
+                    </div>
+                    
+                 </li>
+
+            <br>
+
+                 <li>
+                    <h4> Mozzarella di burrata </h4>
+
+                    <p>cherrytomater, mozzarella, focccacia, basilikumolje</p>
+
+                    <div class="allergener">
+                        <p>Allergener: Melk, hvete og egg</p>
+                    </div>
+
+                    <div class="pris">
+                    <p> Ordinærpris 209,- / Studentpris 139,- </p>
+                    </div>
+                    
+                 </li>
 
             
-            <div class="desserter">
-                <h3>Desserter</h3>
-
-                <ul class="desserter liste">
-
-                    <li>
-
-                        <h4>Gelta e sorbetto</h4>
-
-                        <p>Velg en kule vanilje, bringebærsorbet eller sjokoladeis
-
-                        <div class="allergener">
-                            <i>Allergener: Egg, melk</i>
-                        </div>
-
-                        <b>Ordinærpris 59,- / Studentpris 49,-</b>
-
-                        </p>
-                    </li>
-
-                    <li>
-
-                        <h4>Souffle al cioccolato</h4>
-
-                        <p>Sjokoladefondant servert med bringebærcoulis og vaniljeis
-
-                        <div class="allergener">
-                            <i>Allergener: Egg, hvete, melk</i>
-                        </div>      
-
-                        <b>Ordinærpris 139,- / Studentpris 129,-</b>
-
-                        </p>
-                    </li>
-
-                    <li>
-                        <h4>Tiramisu</h4>
-
-                        <p>Vår spesialitet: Italiensk espressokake
-
-                        <div class="allergener">
-                            <i>Allergener: Egg, hvete, melk</i>
-                        </div>
-
-                        <b>Ordinærpris 139,- / Studentpris 129,-</b><br>
-
-                        Se under for bordreservasjon!
-                        </p>
-                    </li>
             </div>
 
-        </strong>
-
-        </div>
-
-    </div>
- 
     </div>
 
 
+    <h2> Hovedretter </h2>
 
+    <div class="matrett">
 
+            <div class="flex-item1">
+    
+            
+                <li>
+                    <h4> Pollo a la Fiorentina </h4>
 
+                    <p>Pannestekt kyllingfilet servert med cherrytomater og poteter</p>
 
-    <div class="nederstedel">
+                    <div class="allergener">
+                        <p>Allergener: Melk</p>
+                    </div>
 
-            <div class="bordreservasjon">
+                    <div class="pris">
+                    <p>Ordinærpris: 189,- / Studentpris 159,-</p>
+                    </div>
 
-            <p><strong>Reserver bord her!</strong></p>
+                </li>
+            <br>
+                <li>
+                    <h4>Pasta Carbonara </h4>
 
-            <div>
-                <span>Navn: </span>  
-                <input type="text" name="name" id="name" placeholder="Skriv navnet ditt her..." required>
-            </div>
-            <div>
-                <span>Telefonnummer:</span> 
-                <input type="number" name="number" id="number" placeholder="Skriv telefonnr ditt..." required>
-            </div>
-            <div> 
-                <span>Dato: </span>
-                <input type="date" name="date" id="date" placeholder="Dato" required>
-            </div>  
+                    <p>Hjemmelaget pasta med fløte, parmesan og kvernet sort pepper</p>
 
+                    <div class="allergener">
+                        <p>Allergener: Egg, hvete og melk </p>
+                    </div>
 
-            <div>
-                <span>Hvor mange personer: </span>
+                    <div class="pris">
+                    <p>Ordinærpris: 215,- / Studentpris 135,-</p>
+                    </div>
 
-                <select name="personer" id="personer" required>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                </select>
-            </div>
+                </li>
 
-
-            <div>
-                <span>Klokkeslett: </span>
-
-                <input type="text" name="Klokkeslett" id="Klokkeslett" placeholder="Velg klokkeslett..." required>
+            
             </div>
 
-            <div id="submit">
-            <input type="submit" value="RESERVER" id="submit">
+            <div class="flex-item2">
+
+                <li>
+                    <h4>Pizza Prosquitto de parma</h4>
+
+                    <p>Pizza med mozzarella, parmaskinke, ruccola og parmesan i tomatsaus</p>
+
+                    <div class="allergener">
+                        <p>Allergener: Melk, og hvete</p>
+                    </div>
+
+                    <div class="pris">
+                    <p> Ordinærpris 225,- / Studentpris 185,- </p>
+                    </div>
+                    
+                 </li>
+
+            <br>
+
+                 <li>
+                    <h4> 4 formaggi </h4>
+
+                    <p> Hvit pizza med mozzarella, pecorino, parmesan og gorgonzola</p>
+
+                    <div class="allergener">
+                        <p>Allergener: Melk, og hvete </p>
+                    </div>
+
+                    <div class="pris">
+                    <p> Ordinærpris 199,- / Studentpris 149,- </p>
+                    </div>
+                    
+                 </li>
+
+            
             </div>
 
-        </div><!--Bordreservasjon-->
+    </div>
 
-        
 
-        <div class="flexitemBilde">
-            <img id="bildeBordreservasjon" src="Bilder/Bordreservasjon.jpg" alt="">
-            <!--Bildet er hentet fra: https://images.pexels.com/photos/13985154/pexels-photo-13985154.jpeg?auto=compress&cs=tinysrgb&w=600-->
-        </div>
 
-    </div><!--NedersteDel-->
+
+    
+    <h2> Desserter </h2>
+
+    <div class="matrett">
+
+            <div class="flex-item1">
+    
+            
+                <li>
+                    <h4> Gelta e sorbetto </h4>
+
+                    <p> Velg en kule vanilje, bringebærsorbet eller sjokoladeis</p>
+
+                    <div class="allergener">
+                        <p>Allergener: Egg og melk </p>
+                    </div>
+
+                    <div class="pris">
+                    <p>Ordinærpris: 69,- / Studentpris 49,-</p>
+                    </div>
+
+                </li>
+            <br>
+                <li>
+                    <h4>Soufle al cioccolato </h4>
+
+                    <p>Sjokoladefondant servert med bringebærcoulis og vaniljeis</p>
+
+                    <div class="allergener">
+                        <p>Allergener: Egg, hvete og melk</p>
+                    </div>
+
+                    <div class="pris">
+                    <p>Ordinærpris: 119,- / Studentpris 109,-</p>
+                    </div>
+
+                </li>
+
+            
+            </div>
+
+            <div class="flex-item2">
+
+                <li>
+                    <h4> Tiramisu </h4>
+
+                    <p> Vår spesialitet: Italiensk espressokake </p>
+
+                    <div class="allergener">
+                        <p>Allergener: Melk, hvete og egg</p>
+                    </div>
+
+                    <div class="pris">
+                    <p> Ordinærpris 139,- / Studentpris 119,- </p>
+                    </div>
+                    
+                 </li>
+
+            <br>
+
+                 <li>
+                    <h4>Panna cotta </h4>
+
+                    <p>Klassisk vaniljedessert med bringebærcoulis</p>
+
+                    <div class="allergener">
+                        <p>Allergener: Melk</p>
+                    </div>
+
+                    <div class="pris">
+                    <p> Ordinærpris 129,- / Studentpris 109,- </p>
+                    </div>
+                    
+                 </li>
+
+            
+            </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+<hr>
+
+
+
+
+
+<!--Bordreservasjon-->
+<div class="booking">
+    <h2> Reserver bord her</h2>
+</div>
+
+    <div class="bordreservasjon">
+
+    <div>
+        <span>Navn: </span>  
+        <input type="text" name="name" id="name" placeholder="Skriv navnet ditt her..." required>
+    </div>
+    <div>
+        <span>Telefonnummer:</span> 
+        <input type="number" name="number" id="number" placeholder="Skriv telefonnr ditt..." required>
+    </div>
+    <div> 
+        <span>Dato: </span>
+        <input type="date" name="date" id="date" placeholder="Dato" required>
+    </div>  
+
+
+    <div>
+        <span>Hvor mange personer: </span>
+
+        <select name="personer" id="personer" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+    </div>
+
+
+    <div>
+        <span>Klokkeslett: </span>
+
+        <input type="text" name="Klokkeslett" id="Klokkeslett" placeholder="Velg klokkeslett..." required>
+    </div>
+
+    <div id="submit">
+    <input type="submit" value="RESERVER" id="submit">
+    </div>
+    </div>
+
+
+
+    
+    
 
     
 
-<footer class="footer">
-        
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.7587760065207!2d10.733179251514313!3d59.919550670511555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7bfda9fef5%3A0x1999a7ebc1b332a3!2sOsloMet%20-%20Biblioteket%20P35!5e0!3m2!1sno!2sno!4v1667565132058!5m2!1sno!2sno"
-        width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade" class="kart">
-    </iframe>
+    <footer class="footer">
 
-    <ul class="footerinfo">
-        <li>
-            <p><strong>Adresse</strong></p>
-                <ul>
-                    <li>
-                        <adress>Pilestredet 35, 0166 Oslo</adress>
-                    </li>
-                </ul>
-                <br>
-                <p><strong>Kontakt oss</strong></p>
+        <!-- iframe linken hentet direkte fra google maps-->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.7587760065207!2d10.733179251514313!3d59.919550670511555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7bfda9fef5%3A0x1999a7ebc1b332a3!2sOsloMet%20-%20Biblioteket%20P35!5e0!3m2!1sno!2sno!4v1667565132058!5m2!1sno!2sno"
+             style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="kart">
+        </iframe>
+
+        <ul class="footerinfo">
+            <li>
+                <p><strong>Adresse</strong></p>
                     <ul>
                         <li>
-                            Telefon: +47 12 34 56 78
-                            <br>
-                            Mail: italiano@mail.no
+                            <adress>Pilestredet 35, 0166 Oslo</adress>
                         </li>
                     </ul>
-            </li>
-    </ul>
+                    <br>
+                    <p><strong>Kontakt oss</strong></p>
+                        <ul>
+                            <li>
+                                Telefon: +47 12 34 56 78
+                                <br>
+                                Mail: italiano@mail.no
+                            </li>
+                        </ul>
+                </li>
+        </ul>
+
 
 </footer>
 
-</body>
 
+</body>
 </html>

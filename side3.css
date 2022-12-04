@@ -1,80 +1,51 @@
-/*Noe kode som vi brukte på hver av sidene, dette ønsket vi skulle være likt utgangspunkt for alle*/
-
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
+  /*Margin top her for at ikke det øverste på siden skulle falle under navigasjonsbaren (som hendte uansett hvis ikke)*/
+  margin-top: 150px;
+
   font-family: 'Jost', sans-serif;
   text-align: center;
-  margin-top: 150px;
-  /*Margin top her for at ikke det øverste på siden skulle falle under navigasjonsbaren (som hendte hvis denne ikke ble inkludert)*/
-
 }
-
-/*Forsøk gjort på å bedre tilpasse innholdet ulike skjermstørrelser*/
+    
+/*Endringer i noen CSS for å tilpasse innholdet best mulig for fleste telefonskjerm */
 @media screen and (max-width: 700px) {
-  .header {
-    max-width: 100%;
+  .restaurantnavn, .Meny, .matrett{
+      flex-direction: column;
   }
   
-  .restaurantnavn, .vårmeny, .grid-container, .bordreservasjon{
-    flex-direction: column;
-    max-width: fit-content;
-    text-align: center;
-  }
-  #bilder {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    text-align: center;
-  }
   .vinyardBilde{
-    margin-top: 50px;
+      margin-top: 50px;
   }
-    
-
-   .vårmeny {
-    flex-direction: column-reverse;
-  }
-
-  .bildevenstre {
-    background-image: linear-gradient(white, rgb(174, 85, 85));
-
-  }
-
-  .nederstedel {
-    flex-direction: column;
-  }
-
+  
   .footer{
-    height:200px;
-    max-width: 100%;
-    font-size: x-small;
+      height:200px;
+      font-size: x-small;
   }
+
   .footer iframe{
-    width: 200px;
-    height: 150px;
+      width: 200px;
+      height: 150px;
   }
+  
 }
 
 
 /*Koden som tilhører navigasjonsbaren (denne er lik for alle fem sidene):*/
-
 header {
   width: 100%;
   height: 15%;
+  background: rgb(174, 85, 85);
+  position: fixed;
   top: 0;
   left: 0;
-
-  position: fixed;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-
-  background: rgb(174, 85, 85);
 }
 
 .logo {
@@ -90,46 +61,44 @@ header {
 }
 
 .logo a {
-  font-size: 2.8vw;
-  text-decoration: none;
-
-  width: 100%;
   height: 100%;
+  width: 100%;
+  text-decoration: none;
 
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  font-size: 2.8vw;
 }
 
 .logo a p {
-  width: 70%;
-  max-height: 100%;
-  margin-right: 23%;
-
-  text-align: center;
   font-family: 'Marck Script', cursive;
   color: white;
+  width: 70%;
+  max-height: 100%;
+  text-align: center;
+  margin-right: 23%;
 }
 
 nav {
   margin-right: 4%;
   width: 50%;
   height: 100%;
+
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
 nav a {
-  height: 90%;
-  padding: 0 2% 0 2%;
-  display: flex;
-
-  align-items: center;
   text-decoration: none;
   font-size: 1.5vw;
   color: white;
+  height: 90%;
+  padding: 0 2% 0 2%;
+  display: flex;
+  align-items: center;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
@@ -139,7 +108,7 @@ nav a:hover {
   font-weight: 600;
   border-radius: 5px;
 }
-/*NAVIGATION BAR^^ */
+  
 
 
 
@@ -158,22 +127,18 @@ nav a:hover {
   color: rgb(175, 76, 76);
 }
 
-
-
-
-
+/*Styling av p-elementer i innledningen*/
+.restaurantnavn p {
+  font-size: 20px;
+  line-height: 1.5;
+}
 
 /*Bruker flex for å enkelt kunne vise elementene side ved side på pc, men under hverandre på mindre skjermer*/
 .flex-item-left, .flex-item-right{
   flex: 50%;
   margin-left: 70px;
   margin-right: 70px;
-  font-size: 150%;
 }
-
-
-
-
 
 
 /*Styling av første bilde*/
@@ -185,11 +150,6 @@ nav a:hover {
 }
 
 
-/*Styling av p-elementer i innledningen*/
-.restaurantnavn p {
-  margin-top: 25px;
-  line-height: 2.0;
-}
 
 
 /*Styling av <hr> for å marker starten på menyen*/
@@ -200,131 +160,102 @@ hr {
 }
 
 
-/*Styling av overskriften "Vår meny"*/
-#vårmeny {
-  font-size: 200%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: black;
-  font-family: 'Jost', sans-serif;
-}
-
-
-/*Kode for å lage et grid-system hvor bildene og menyen kan ligge side ved side*/
-.grid-container {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  grid-gap: 10px;
-  padding: 10px;
-}
-
-
-.grid-container > div {
+/* Styling av meny oppsettet */
+.Meny h1, .booking h2{
   text-align: center;
-  padding: 20px 0;
+  font-size: 45px;
+  color: rgb(175, 76, 76);
+  padding: 3%;
+}
+.Meny h2{
+  text-align: center;
+  font-size: 35px;
+  width: 90%;
+  border: 5px solid rgb(174, 85, 85);
+  margin-left: 5%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.Meny h4{
+  font-size: 25px;
+  font-weight: bold;
+}
+.Meny p{
   font-size: 20px;
 }
 
-
-/*Kode for formateringen av bildene som går langs menyen*/
-#matlaging, #pizza, #gelato, #dekketbord {
-  display: flex;
-  width: 90%;
-}
-
-
-/*Kode for få ønsket linjeavstand, styling og størrelse på diverse tekst i menyen*/
-.menyen {
-  line-height: 350%;
-}
-.menyen ul li {
-  list-style: georgian;
-}
-.menyen h3 {
-  font-size: 5vw;
-}
-.menyen h4 {
-  display:block;
-  font-size: 4vw;
-  margin: 30px;
-  font-weight: bold;
-}
-.allergener{
-  display: block;
-  color: rgb(174, 85, 85);
-  font-weight: bold;
-}
-
-
-
-/*Lager avstand mellom de ulike delene i menyen*/
-.forrett, .hovedretter {
-  margin-bottom: 100px;
-}
-.desserter {
-  margin-bottom: 50px;
-}
-
-
-
-/*Bruker flex for å kunne sidestille bordreservasjondelen når den åpnes på en pc, 
-men vises i column-format på mindre skjermer*/
-.nederstedel {
+.matrett{
   display: flex;
   align-items: center;
-  height: auto;
-  margin-bottom: 5%;
+  margin-bottom: 30px;
 }
 
-
-
-/*Diverse styling av de ulike delene av bordreservasjon-elementet*/
-.bordreservasjon {
-  font-family: 'Jost', sans-serif;
-  font-size: x-large;
-  border: 3px solid rgb(175, 76, 76);
-  box-shadow: 3px 3px rgba(217,103,103,0.7);
-  padding: 5%;
-  background-color: #e19999;
-  text-align: left;
+.flex-item1, .flex-item2{
   flex: 50%;
-  height: 620px;
+  margin-left: 70px;
+  margin-right: 70px;
+  list-style-type: none;
 }
-.bordreservasjon div {
-  display: inline-block;
-  text-align: start left;
-  margin: 10px 20px;
+
+.allergener p{
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(174, 85, 85);
+  
+}
+.pris p{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+
+/* Stylingkoder for reservasjon-elemntet  */
+.bordreservasjon{
+  border: 5px solid rgb(174, 85, 85);
+  display:flexbox;
+  margin: 20%;
+  margin-top: 0;
+  margin-bottom: 0;
+  
+  padding: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 2.0;
+  background-color: rgb(245, 202, 202);
 }
 .bordreservasjon div input {
   font-family: 'Jost', sans-serif;
-  border: 2px solid rgb(175, 76, 76);
+  border: 2px solid rgb(174, 85, 85);
+  padding: 5px;
+  font-size: 18px;
 }
 .bordreservasjon div select {
-  border: 3px solid rgb(175, 76, 76);
+  border: 3px solid rgb(174, 85, 85);
+  padding: 5px;
 }
 #submit {
   text-align: center;
   width: 100%;
 }
 #submit input {
-  width: 200px;
+  width: 80%;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(174, 85, 85);
 }
 
 
+  
+  
 
 
-/*Kode for styling av bildet tilhørende bordreservasjon*/
-#bildeBordreservasjon {
-  width: 100%;
-  box-shadow: 3px 3px rgba(217,103,103,0.7);
-}
-
-
-
-
-/*Kode for alt som befinner seg i footer (Også lik for alle fem sidene): */
+/*Kode for alt som befinner seg i footer (Også lik for alle fire sidene): */
 footer {
-  width: 100%;
+  max-width: 100%;
   height: 300px;
   background: rgb(236, 234, 234);
   position: static;
@@ -332,17 +263,15 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   font-size: 1.2em;
+  margin-top: 50px;
 }
-
 iframe{
   width: 600px;
   height: 250px;
 }
-
 .footerinfo ul {
   list-style: none;
 }
-
 .footerinfo {
   list-style: none;
   display: flex;
