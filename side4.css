@@ -112,7 +112,8 @@ nav a:hover {
 
 
 
-/*Kode til alt innholdet av bilder og tekst som handler om brukervennlighet*/
+/*Kode til alt innholdet av bilder og tekst som handler er om brukervennlighet*/
+
 .Brukervennlighet {
     display: flex;
     justify-content: center;
@@ -156,6 +157,15 @@ nav a:hover {
     margin-right: 50px;
 }
 
+
+
+
+
+
+/*Kode for animasjon over en setning, kun gjort for moro skyld*/
+
+/* Kode delvis hentet fra: https://freefrontend.com/css-text-effects/*/
+
 span {
     padding: 1%;
     font-size: 1.4em;
@@ -175,6 +185,8 @@ span:hover {
     background-position: 0% 100%;
     transition: background-position .7s, background-size .5s ease-in-out;
 }
+
+
 
 
 
